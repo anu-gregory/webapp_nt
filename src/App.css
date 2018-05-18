@@ -26,3 +26,54 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.footer-title {
+  height: 100% !important;
+  width: 15% !important;
+  padding: 1rem 1rem !important;
+}
+.footer-button {
+  height: 100% !important;
+  width: 10% !important;
+  padding: 1rem 1rem !important;
+  border-radius: 0;
+  background-color: #2D7DD2;
+  color: whitesmoke;
+}
+.footer-body {
+  height: 100% !important;
+  width: 75% !important;
+  padding: 1rem 1rem !important;
+}
+
+html {
+  margin-bottom: 65px;
+}
+
+.body{
+//background-image: url("logo.svg");
+  background-color: #cccccc;
+}
+
+.form_login{
+  background-color: #2D7DD2;
+  margin-top: 150px;
+  margin-left: 35%;
+  border-color: #222222;
+  border: 10px;
+  border-radius: 4px;
+  width: 30%;
+  height: 45%;
+//position: absolute;
+//alignment: center;
+}
+
+.form_email{
+  width: 70%;
+}
+
+.form_password{
+  width: 70%;
+}
+
+
