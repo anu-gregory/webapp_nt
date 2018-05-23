@@ -205,7 +205,7 @@ export default class taskPage extends React.Component {
                             </tr>
 
                             <tr className="tableFormat">
-                                <td><input type="textField" id="textBox1" className="first" maxLength={10}  value={this.state.changeTask1} onChange={this.handleEditTask} onKeyPress={}/></td>
+                                <td><input type="textField" id="textBox1" className="first" maxLength={10}  value={this.state.changeTask1} onChange={this.handleEditTask}/></td>
                                 <td><img  id='id1'  className="first" src={this.state.uri1 }  alt=''  height={20} onClick={this.changeLogo1}/>
                                     <img  id='id2'  className="first" src={this.state.uri2 }  alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id3'  className="first" src={this.state.uri3 }  alt=''  height={20} onClick={this.toggleIcon}/>
