@@ -77,3 +77,83 @@ html {
 }
 
 
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 65px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Banner{
+  background-color: antiquewhite;
+  height: 47px;
+  margin-top: 0;
+  color: cornflowerblue;
+}
+
+.Hour-select{
+  position: absolute;
+  color: #222222;
+}
+.App-clock{
+  position: absolute;
+  margin-left: 1000px;
+  color: #222222;
+}
+.edit{
+  width: 50px;
+}
+.table, th , td{
+  border: 1px solid black;
+  border-collapse: collapse;
+    width: available;
+
+}
+.td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+.try1 td{
+  padding: 5px;
+  white-space: nowrap;
+  border: 0px;
+}
+#textBox1,#textBox2,#textBox3,#textBox4,#textBox5,#textBox6,#textBox7,#textBox8,#textBox9,#textBox10
+{
+  width: 60%;
+  border:0;
+  font-size:14pt;
+}
+
+#Width{
+
+  width: 40px;
+}
+#HeaderWidth{
+  width: 40px;
+}
+
+

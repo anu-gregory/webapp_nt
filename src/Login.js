@@ -23,7 +23,7 @@ export default class login extends React.Component{
     submitLogin=(event)=> {
 
         event.preventDefault();
-        firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then(() =>{this.props.history.push('/')}
+        firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then(() =>{this.props.history.push('/TaskPage')}
         ).catch((error)=>{
             alert(error);
         });

@@ -5,6 +5,7 @@ import './index.css';
 import login from './Login';
 import createAccount from './CreateAccount';
 import App from './App';
+import taskPage from './TaskPage';
 import registerServiceWorker from './registerServiceWorker';
 import * as firebase from 'firebase';
 const config = {
@@ -20,6 +21,7 @@ firebase.initializeApp(config);
 ReactDOM.render(
         <BrowserRouter>
             <Switch>
+                <Route path="/TaskPage" component={taskPage} />
                 <Route path="/Login" component={login} />
                 <Route path="/CreateAccount" component={createAccount} />
                 <Route path="/" component={App}/>
