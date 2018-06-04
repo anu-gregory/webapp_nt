@@ -18,7 +18,7 @@ export default class taskPage extends React.Component {
             date: moment(),
             changeTask1: '',
             nDate:tDate,
-            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'),
+            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -137,13 +137,19 @@ export default class taskPage extends React.Component {
 */
 
     handleEditTask=(event)=>{
-        let user = firebase.auth().currentUser;
-        let date = this.state.nDate;
         this.setState({
             changeTask1: event.target.value
         });
+    };
+    addTask1=()=>{
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
         let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
-        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 })
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 }),
+        alert("Task Added");
+    };
+    delTask1=()=>{
+
     };
 
     changeLogo1=()=>{
@@ -205,7 +211,7 @@ export default class taskPage extends React.Component {
                             </tr>
 
                             <tr className="tableFormat">
-                                <td><input type="textField" id="textBox1" className="first" maxLength={10}  value={this.state.changeTask1} onChange={this.handleEditTask}/></td>
+                                <td><input type="textField" id="textBox1" className="first" maxLength={10}  value={this.state.changeTask1} onChange={this.handleEditTask}/><button onClick={this.addTask1}>+</button><button onClick={this.delTask1}>-</button></td>
                                 <td><img  id='id1'  className="first" src={this.state.uri1 }  alt=''  height={20} onClick={this.changeLogo1}/>
                                     <img  id='id2'  className="first" src={this.state.uri2 }  alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id3'  className="first" src={this.state.uri3 }  alt=''  height={20} onClick={this.toggleIcon}/>
@@ -213,11 +219,11 @@ export default class taskPage extends React.Component {
                                 <td ><img id='id5'  className="first" src={this.state.uri5 }  alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id6'  className="first" src={this.state.uri6 }  alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id7'  className="first" src={this.state.uri7 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id8'  className="first" src={this.state.imgSrc8 }  alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id9'  className="first" src={this.state.imgSrc9 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id10' className="first" src={this.state.imgSrc10} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id11' className="first" src={this.state.imgSrc11} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id12' className="first" src={this.state.imgSrc12} alt=''  height={20} onClick={this.toggleIcon}/></td>
+                                    <img  id='id8'  className="first" src={this.state.uri8 }  alt=''  height={20} onClick={this.toggleIcon}/></td>
+                                <td ><img id='id9'  className="first" src={this.state.uri9 }  alt=''  height={20} onClick={this.toggleIcon}/>
+                                    <img  id='id10' className="first" src={this.state.uri10} alt=''  height={20} onClick={this.toggleIcon}/>
+                                    <img  id='id11' className="first" src={this.state.uri11} alt=''  height={20} onClick={this.toggleIcon}/>
+                                    <img  id='id12' className="first" src={this.state.uri12} alt=''  height={20} onClick={this.toggleIcon}/></td>
                                 <td ><img id='id13' className="first" src={this.state.imgSrc13} alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id14' className="first" src={this.state.imgSrc14} alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id15' className="first" src={this.state.imgSrc15} alt=''  height={20} onClick={this.toggleIcon}/>
