@@ -18,6 +18,7 @@ export default class taskPage extends React.Component {
             date: moment(),
             changeTask1: '',
             nDate:tDate,
+            key1:'',
             uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
         };
         this.handleChange = this.handleChange.bind(this);
@@ -144,15 +145,16 @@ export default class taskPage extends React.Component {
     addTask1=()=>{
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
+        let that = this;
         let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
-        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 }),
+        that.setState({ key1: key});
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 });
         alert("Task Added");
     };
     delTask1=()=>{
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
-        let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
-        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).remove()
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(this.state.key1).set(null);
     };
 
     changeLogo1=()=>{
