@@ -149,7 +149,10 @@ export default class taskPage extends React.Component {
         alert("Task Added");
     };
     delTask1=()=>{
-        
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).remove()
     };
 
     changeLogo1=()=>{
