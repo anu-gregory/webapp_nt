@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb653bcf-812e-4c49-86ad-ccca8e16c8cc" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="TaskPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TaskPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+            <state relative-caret-position="306">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -214,7 +214,8 @@
       <workItem from="1527859296853" duration="590000" />
       <workItem from="1527891713994" duration="43000" />
       <workItem from="1528097818817" duration="2502000" />
-      <workItem from="1528138815128" duration="298000" />
+      <workItem from="1528138815128" duration="1246000" />
+      <workItem from="1528195925334" duration="264000" />
     </task>
     <task id="LOCAL-00001" summary="First Try">
       <created>1526345170373</created>
@@ -321,11 +322,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527039358644</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="task add option">
+      <created>1528139147955</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1528139147955</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43856000" />
+    <option name="totallyTimeSpent" value="45068000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -340,11 +348,11 @@
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06622024" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49702382" weight="0.32956383" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.52529764" side_tool="true" weight="0.2714055" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.48809522" weight="0.32956383" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51339287" side_tool="true" visible="true" weight="0.32901135" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" sideWeight="0.48660713" visible="true" weight="0.32901135" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4940476" weight="0.32901135" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -382,7 +390,8 @@
     <MESSAGE value="Readme changed" />
     <MESSAGE value="date picker added, css changes, next &lt; working with the bubbles" />
     <MESSAGE value="Edit for bubble manipulation and saving data in firebase." />
-    <option name="LAST_COMMIT_MESSAGE" value="Edit for bubble manipulation and saving data in firebase." />
+    <MESSAGE value="task add option" />
+    <option name="LAST_COMMIT_MESSAGE" value="task add option" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Login.js">
@@ -668,13 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -699,10 +701,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2499">
+          <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/TaskPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="75" column="28" lean-forward="true" selection-start-line="75" selection-start-column="28" selection-end-line="75" selection-end-column="28" />
+        <state relative-caret-position="306">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
