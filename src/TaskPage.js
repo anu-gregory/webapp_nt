@@ -149,7 +149,7 @@ export default class taskPage extends React.Component {
         alert("Task Added");
     };
     delTask1=()=>{
-
+        
     };
 
     changeLogo1=()=>{
