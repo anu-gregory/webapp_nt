@@ -37,6 +37,7 @@ export default class login extends React.Component{
                     <br/><label>Password<br/><input type='password' className='form_password' placeholder='insert password' onChange={this.password} value={this.state.password}/> </label>
                     <br/><br/><input type='submit' value='login'/>
                     <br/><p>New user?<a href={'/CreateAccount'}>Create Account</a></p>
+                    <p>Forgot Password?<a href={'/ForgotPassword'}>Reset Password</a></p>
                 </form>
                <label onChange={this.state.error}>{this.state.error}</label>
             </div>

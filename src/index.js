@@ -7,6 +7,7 @@ import createAccount from './CreateAccount';
 import App from './App';
 import taskPage from './TaskPage';
 import registerServiceWorker from './registerServiceWorker';
+import ForgotPassword from './ForgotPassword';
 import * as firebase from 'firebase';
 const config = {
     apiKey: "AIzaSyCc6uvv4-yoigUNu2p9sgK-9WOSTBFSVM0",
@@ -23,6 +24,7 @@ ReactDOM.render(
             <Switch>
                 <Route path="/TaskPage" component={taskPage} />
                 <Route path="/Login" component={login} />
+                <Route path="/ForgotPassword" component={ForgotPassword}/>
                 <Route path="/CreateAccount" component={createAccount} />
                 <Route path="/" component={App}/>
             </Switch>
