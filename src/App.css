@@ -122,6 +122,10 @@ html {
   margin-left: 1000px;
   color: #222222;
 }
+.logout{
+    position: absolute;
+    margin-left: 1150px;
+}
 .edit{
   width: 50px;
 }
