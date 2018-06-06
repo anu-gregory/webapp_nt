@@ -378,6 +378,7 @@ export default class taskPage extends React.Component {
                             onChange={this.handleChange}
                         />
                     </p>
+                    <p className="logout"><button onClick={()=>{firebase.auth().signOut();this.props.history.push('/login')}}>logout</button></p>
                 </div>
                 <div className="main_table">
                     <view>
