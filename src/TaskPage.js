@@ -113,9 +113,11 @@ export default class taskPage extends React.Component {
         let user = firebase.auth().currentUser;
         console.log('change function called');
         var that = this;
+        this.setState({changeTask1:'',uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
+        });
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
-                if(child.val() === null){
+                if(child === null){
                     console.log('no data');
                     that.setState({changeTask1 : ''});
                 }
@@ -262,6 +264,10 @@ export default class taskPage extends React.Component {
         firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(key).set(null);
         firebase.database().ref(`Users/${user.uid}/${date}/`).child(name).set(null);
         firebase.database().ref(`Users/${user.uid}/${date}/keys`).child(key1).set(null);
+        this.setState({
+            changeTask1:'',
+            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
+        })
     };
 
     changeLogo1=()=>{
