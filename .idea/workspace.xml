@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb653bcf-812e-4c49-86ad-ccca8e16c8cc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -157,8 +156,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="306">
+              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -257,6 +256,7 @@
         <option value="$PROJECT_DIR$/src/App.css" />
         <option value="$PROJECT_DIR$/src/TaskPage.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/static.json" />
       </list>
     </option>
   </component>
@@ -374,7 +374,7 @@
       <workItem from="1528138815128" duration="1246000" />
       <workItem from="1528195925334" duration="264000" />
       <workItem from="1528226519518" duration="17078000" />
-      <workItem from="1528275514697" duration="21943000" />
+      <workItem from="1528275514697" duration="22586000" />
     </task>
     <task id="LOCAL-00001" summary="First Try">
       <created>1526345170373</created>
@@ -572,11 +572,25 @@
       <option name="project" value="LOCAL" />
       <updated>1528320703355</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="app deployment changes">
+      <created>1528322845028</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1528322845028</updated>
+    </task>
+    <task id="LOCAL-00030" summary="yarn lock file removed.">
+      <created>1528323268164</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1528323268164</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87397000" />
+    <option name="totallyTimeSpent" value="88040000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -645,16 +659,11 @@
     <MESSAGE value="1) logout button added&#10;&#10;2) logout working. routing working" />
     <MESSAGE value="logout button css changes" />
     <MESSAGE value="first table row working completely" />
-    <option name="LAST_COMMIT_MESSAGE" value="first table row working completely" />
+    <MESSAGE value="app deployment changes" />
+    <MESSAGE value="yarn lock file removed." />
+    <option name="LAST_COMMIT_MESSAGE" value="yarn lock file removed." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -1068,10 +1077,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="306">
+          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
         </state>
       </provider>
     </entry>
