@@ -246,7 +246,6 @@ export default class taskPage extends React.Component {
         let user = firebase.auth().currentUser;
         var that = this;
         let date = that.state.nDate;
-        console.log(date);
         let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
         that.setState({ key1: key});
         firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 });
