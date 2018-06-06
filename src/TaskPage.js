@@ -4,8 +4,6 @@ import './App.css';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import moment from 'moment';
-import circle_wh from './circle_wh.jpg';
-import circle_bl from './circle_bl.jpg';
 import * as firebase from 'firebase';
 
 export default class taskPage extends React.Component {
@@ -24,10 +22,8 @@ export default class taskPage extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-
     handleChange(date) {
         let newDate = date.format("YYYY/M/D");
-        console.log(newDate);
         this.setState({
             date: date,
             nDate: newDate
@@ -112,36 +108,117 @@ export default class taskPage extends React.Component {
         }
     }
 
-   /* componentWillMount(){
+    componentWillMount(){
         let user = firebase.auth().currentUser;
-        let name = this.state.name;
         let date = this.state.nDate;
+        //let key1 = this.state.key1;
         var that = this;
-        firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).once('value').then((snapshot)=>{
-            snapshot.forEach(function(child) {
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child.val() !==''){
+                    that.setState({key1 : child.val()});
+                    this.task_row_one(child.val());
+                }
+            });
+        });
+    }
+
+    task_row_one(key){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let key1 = key;
+        var that = this;
+        console.log(key1);
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/${key1}`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
                 console.log(child.val());
+                if(child.val().name !==''){
+                    that.setState({changeTask1 : child.val()});
+                    this.bubble_row_one();
+                }
+            });
+        });
+    }
+
+    bubble_row_one(){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let that = this;
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot1`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
                 if(child.val()!==4) {
                     that.setState({
-                        uri5: require('./circle_wh.jpg')
+                        uri1: require('./circle_wh.jpg')
                     });
                 }
                 if(child.val()===4) {
                     that.setState(
                         {
-                            uri5:require('./circle_bl.jpg')
+                            uri1:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot2`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri2: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri2:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot3`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri3: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri3:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot4`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri4: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri4:require('./circle_bl.jpg')
                         }
                     );
                 }
             });
         });
     }
-*/
 
     handleEditTask=(event)=>{
         this.setState({
             changeTask1: event.target.value
         });
     };
+
     addTask1=()=>{
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
@@ -149,12 +226,18 @@ export default class taskPage extends React.Component {
         let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
         that.setState({ key1: key});
         firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).set({ key: key });
         alert("Task Added");
     };
+
     delTask1=()=>{
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
-        firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(this.state.key1).set(null);
+        let key = this.state.key1;
+        let name = this.state.changeTask1;
+        console.log(key);
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(key).set(null);
+        firebase.database().ref(`Users/${user.uid}/${date}/`).child(name).set(null);
     };
 
     changeLogo1=()=>{
@@ -177,6 +260,75 @@ export default class taskPage extends React.Component {
             );
             console.log(this.state.uri1);
             firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:5 });
+        }
+    };
+
+    changeLogo2=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri2!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri2: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri2);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:4 });
+        }
+        if(this.state.uri2===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri2:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri2);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:5 });
+        }
+    };
+
+    changeLogo3=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri3!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri3: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri3);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:4 });
+        }
+        if(this.state.uri3===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri3:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri3);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:5 });
+        }
+    };
+
+    changeLogo4=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri4!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri4: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri4);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:4 });
+        }
+        if(this.state.uri4===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri4:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri4);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:5 });
         }
     };
 
@@ -218,9 +370,9 @@ export default class taskPage extends React.Component {
                             <tr className="tableFormat">
                                 <td><input type="textField" id="textBox1" className="first" maxLength={10}  value={this.state.changeTask1} onChange={this.handleEditTask}/><button onClick={this.addTask1}>+</button><button onClick={this.delTask1}>-</button></td>
                                 <td><img  id='id1'  className="first" src={this.state.uri1 }  alt=''  height={20} onClick={this.changeLogo1}/>
-                                    <img  id='id2'  className="first" src={this.state.uri2 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id3'  className="first" src={this.state.uri3 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id4'  className="first" src={this.state.uri4 }  alt=''  height={20} onClick={this.toggleIcon}/></td>
+                                    <img  id='id2'  className="first" src={this.state.uri2 }  alt=''  height={20} onClick={this.changeLogo2}/>
+                                    <img  id='id3'  className="first" src={this.state.uri3 }  alt=''  height={20} onClick={this.changeLogo3}/>
+                                    <img  id='id4'  className="first" src={this.state.uri4 }  alt=''  height={20} onClick={this.changeLogo4}/></td>
                                 <td ><img id='id5'  className="first" src={this.state.uri5 }  alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id6'  className="first" src={this.state.uri6 }  alt=''  height={20} onClick={this.toggleIcon}/>
                                     <img  id='id7'  className="first" src={this.state.uri7 }  alt=''  height={20} onClick={this.toggleIcon}/>
