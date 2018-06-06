@@ -17,7 +17,7 @@ export default class taskPage extends React.Component {
             changeTask1: '',
             nDate:tDate,
             key1:'',
-            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
+            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),uri5: require('./circle_wh.jpg'),  uri6: require('./circle_wh.jpg'), uri7: require('./circle_wh.jpg'), uri8: require('./circle_wh.jpg'),uri9: require('./circle_wh.jpg'),  uri10: require('./circle_wh.jpg'), uri11: require('./circle_wh.jpg'), uri12: require('./circle_wh.jpg'),uri13: require('./circle_wh.jpg'),  uri14: require('./circle_wh.jpg'), uri15: require('./circle_wh.jpg'), uri16: require('./circle_wh.jpg'),uri17: require('./circle_wh.jpg'),  uri18: require('./circle_wh.jpg'), uri19: require('./circle_wh.jpg'), uri20: require('./circle_wh.jpg'),uri21: require('./circle_wh.jpg'),  uri22: require('./circle_wh.jpg'), uri23: require('./circle_wh.jpg'), uri24: require('./circle_wh.jpg'),uri25: require('./circle_wh.jpg'),  uri26: require('./circle_wh.jpg'), uri27: require('./circle_wh.jpg'), uri28: require('./circle_wh.jpg'),uri29: require('./circle_wh.jpg'),  uri30: require('./circle_wh.jpg'), uri31: require('./circle_wh.jpg'), uri32: require('./circle_wh.jpg'),uri33: require('./circle_wh.jpg'),  uri34: require('./circle_wh.jpg'), uri35: require('./circle_wh.jpg'), uri36: require('./circle_wh.jpg'),uri37: require('./circle_wh.jpg'),  uri38: require('./circle_wh.jpg'), uri39: require('./circle_wh.jpg'), uri40: require('./circle_wh.jpg'),
         };
         this.handleChange = this.handleChange.bind(this);
     }
@@ -112,8 +112,8 @@ export default class taskPage extends React.Component {
     dataChanged=(date)=>{
         let user = firebase.auth().currentUser;
         console.log('change function called');
-        var that = this;
-        this.setState({changeTask1:'',uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
+        let that = this;
+        this.setState({changeTask1:'', uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),uri5: require('./circle_wh.jpg'),  uri6: require('./circle_wh.jpg'), uri7: require('./circle_wh.jpg'), uri8: require('./circle_wh.jpg'),uri9: require('./circle_wh.jpg'),  uri10: require('./circle_wh.jpg'), uri11: require('./circle_wh.jpg'), uri12: require('./circle_wh.jpg'),uri13: require('./circle_wh.jpg'),  uri14: require('./circle_wh.jpg'), uri15: require('./circle_wh.jpg'), uri16: require('./circle_wh.jpg'),uri17: require('./circle_wh.jpg'),  uri18: require('./circle_wh.jpg'), uri19: require('./circle_wh.jpg'), uri20: require('./circle_wh.jpg'),uri21: require('./circle_wh.jpg'),  uri22: require('./circle_wh.jpg'), uri23: require('./circle_wh.jpg'), uri24: require('./circle_wh.jpg'),uri25: require('./circle_wh.jpg'),  uri26: require('./circle_wh.jpg'), uri27: require('./circle_wh.jpg'), uri28: require('./circle_wh.jpg'),uri29: require('./circle_wh.jpg'),  uri30: require('./circle_wh.jpg'), uri31: require('./circle_wh.jpg'), uri32: require('./circle_wh.jpg'),uri33: require('./circle_wh.jpg'),  uri34: require('./circle_wh.jpg'), uri35: require('./circle_wh.jpg'), uri36: require('./circle_wh.jpg'),uri37: require('./circle_wh.jpg'),  uri38: require('./circle_wh.jpg'), uri39: require('./circle_wh.jpg'), uri40: require('./circle_wh.jpg'),
         });
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
@@ -132,7 +132,7 @@ export default class taskPage extends React.Component {
     componentWillMount(){
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
-        var that = this;
+        let that = this;
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
                 if(child.val() === ''){
@@ -150,7 +150,7 @@ export default class taskPage extends React.Component {
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
         let key1 = key;
-        var that = this;
+        let that = this;
         console.log(key1);
         firebase.database().ref(`Users/${user.uid}/${date}/tasks/${key1}`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
@@ -167,7 +167,7 @@ export default class taskPage extends React.Component {
         let user = firebase.auth().currentUser;
         let date = this.state.nDate;
         let that = this;
-        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot1`).once('value').then((snapshot)=>{
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot1`) .once('value').then((snapshot)=>{
             snapshot.forEach(function(child) {
                 if(child.val()!==4) {
                     that.setState({
@@ -183,8 +183,7 @@ export default class taskPage extends React.Component {
                 }
             });
         });
-
-        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot2`).once('value').then((snapshot)=>{
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot2`) .once('value').then((snapshot)=>{
             snapshot.forEach(function(child) {
                 if(child.val()!==4) {
                     that.setState({
@@ -200,8 +199,7 @@ export default class taskPage extends React.Component {
                 }
             });
         });
-
-        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot3`).once('value').then((snapshot)=>{
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot3`) .once('value').then((snapshot)=>{
             snapshot.forEach(function(child) {
                 if(child.val()!==4) {
                     that.setState({
@@ -217,8 +215,7 @@ export default class taskPage extends React.Component {
                 }
             });
         });
-
-        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot4`).once('value').then((snapshot)=>{
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot4`) .once('value').then((snapshot)=>{
             snapshot.forEach(function(child) {
                 if(child.val()!==4) {
                     that.setState({
@@ -234,6 +231,582 @@ export default class taskPage extends React.Component {
                 }
             });
         });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot5`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri5: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri5:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot6`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri6: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri6:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot7`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri7: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri7:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot8`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri8: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri8:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot9`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri9: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri9:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot10`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri10: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri10:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot11`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri11: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri11:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot12`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri12: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri12:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot13`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri13: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri13:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot14`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri14: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri14:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot15`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri15: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri15:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot16`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri16: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri16:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot17`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri17: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri17:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot18`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri18: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri18:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot19`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri19: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri19:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot20`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri20: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri20:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot21`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri21: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri21:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot22`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri22: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri22:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot23`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri23: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri23:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot24`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri24: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri24:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot25`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri25: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri25:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot26`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri26: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri26:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot27`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri27: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri27:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot28`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri28: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri28:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot29`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri29: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri29:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot30`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri30: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri30:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot31`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri31: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri31:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot32`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri32: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri32:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot33`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri33: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri33:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot34`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri34: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri34:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot35`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri35: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri35:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot36`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri36: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri36:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot37`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri38: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri38:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot38`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri38: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri38:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot39`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri39: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri39:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask1}/dot40`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri40: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri40:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
     }
 
     handleEditTask=(event)=>{
@@ -244,7 +817,7 @@ export default class taskPage extends React.Component {
 
     addTask1=()=>{
         let user = firebase.auth().currentUser;
-        var that = this;
+        let that = this;
         let date = that.state.nDate;
         let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
         that.setState({ key1: key});
@@ -265,7 +838,7 @@ export default class taskPage extends React.Component {
         firebase.database().ref(`Users/${user.uid}/${date}/keys`).child(key1).set(null);
         this.setState({
             changeTask1:'',
-            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),
+            uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),uri5: require('./circle_wh.jpg'),  uri6: require('./circle_wh.jpg'), uri7: require('./circle_wh.jpg'), uri8: require('./circle_wh.jpg'),uri9: require('./circle_wh.jpg'),  uri10: require('./circle_wh.jpg'), uri11: require('./circle_wh.jpg'), uri12: require('./circle_wh.jpg'),uri13: require('./circle_wh.jpg'),  uri14: require('./circle_wh.jpg'), uri15: require('./circle_wh.jpg'), uri16: require('./circle_wh.jpg'),uri17: require('./circle_wh.jpg'),  uri18: require('./circle_wh.jpg'), uri19: require('./circle_wh.jpg'), uri20: require('./circle_wh.jpg'),uri21: require('./circle_wh.jpg'),  uri22: require('./circle_wh.jpg'), uri23: require('./circle_wh.jpg'), uri24: require('./circle_wh.jpg'),uri25: require('./circle_wh.jpg'),  uri26: require('./circle_wh.jpg'), uri27: require('./circle_wh.jpg'), uri28: require('./circle_wh.jpg'),uri29: require('./circle_wh.jpg'),  uri30: require('./circle_wh.jpg'), uri31: require('./circle_wh.jpg'), uri32: require('./circle_wh.jpg'),uri33: require('./circle_wh.jpg'),  uri34: require('./circle_wh.jpg'), uri35: require('./circle_wh.jpg'), uri36: require('./circle_wh.jpg'),uri37: require('./circle_wh.jpg'),  uri38: require('./circle_wh.jpg'), uri39: require('./circle_wh.jpg'), uri40: require('./circle_wh.jpg'),
         })
     };
 
@@ -290,9 +863,7 @@ export default class taskPage extends React.Component {
             console.log(this.state.uri1);
             firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:5 });
         }
-    };
-
-    changeLogo2=()=>{
+    };changeLogo2=()=>{
         let user = firebase.auth().currentUser;
         let name = this.state.changeTask1;
         console.log(name);
@@ -313,9 +884,7 @@ export default class taskPage extends React.Component {
             console.log(this.state.uri2);
             firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:5 });
         }
-    };
-
-    changeLogo3=()=>{
+    };changeLogo3=()=>{
         let user = firebase.auth().currentUser;
         let name = this.state.changeTask1;
         console.log(name);
@@ -336,9 +905,7 @@ export default class taskPage extends React.Component {
             console.log(this.state.uri3);
             firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:5 });
         }
-    };
-
-    changeLogo4=()=>{
+    };changeLogo4=()=>{
         let user = firebase.auth().currentUser;
         let name = this.state.changeTask1;
         console.log(name);
@@ -359,8 +926,764 @@ export default class taskPage extends React.Component {
             console.log(this.state.uri4);
             firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:5 });
         }
+    };changeLogo5=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri5!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri5: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri5);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).update({ state:4 });
+        }
+        if(this.state.uri5===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri5:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri5);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).update({ state:5 });
+        }
+    };changeLogo6=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri6!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri6: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri6);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot6`).update({ state:4 });
+        }
+        if(this.state.uri6===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri6:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri6);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot6`).update({ state:5 });
+        }
+    };changeLogo7=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri7!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri7: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri7);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot7`).update({ state:4 });
+        }
+        if(this.state.uri7===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri7:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri7);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot7`).update({ state:5 });
+        }
+    };changeLogo8=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri8!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri8: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri8);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot8`).update({ state:4 });
+        }
+        if(this.state.uri8===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri8:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri8);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot8`).update({ state:5 });
+        }
+    };changeLogo9=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri9!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri9: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri9);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot9`).update({ state:4 });
+        }
+        if(this.state.uri9===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri9:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri9);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot9`).update({ state:5 });
+        }
+    };changeLogo10=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri10!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri10: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri10);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot10`).update({ state:4 });
+        }
+        if(this.state.uri10===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri10:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri10);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot10`).update({ state:5 });
+        }
+    };changeLogo11=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri11!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri11: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri11);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot11`).update({ state:4 });
+        }
+        if(this.state.uri11===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri11:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri11);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot11`).update({ state:5 });
+        }
+    };changeLogo12=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri12!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri12: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri12);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot12`).update({ state:4 });
+        }
+        if(this.state.uri12===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri12:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri12);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot12`).update({ state:5 });
+        }
+    };changeLogo13=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri13!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri13: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri13);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot13`).update({ state:4 });
+        }
+        if(this.state.uri13===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri13:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri13);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot13`).update({ state:5 });
+        }
+    };changeLogo14=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri14!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri14: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri14);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot14`).update({ state:4 });
+        }
+        if(this.state.uri14===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri14:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri14);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot14`).update({ state:5 });
+        }
+    };changeLogo15=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri15!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri15: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri15);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot15`).update({ state:4 });
+        }
+        if(this.state.uri15===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri15:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri15);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot15`).update({ state:5 });
+        }
+    };changeLogo16=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri16!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri16: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri16);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot16`).update({ state:4 });
+        }
+        if(this.state.uri16===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri16:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri16);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot16`).update({ state:5 });
+        }
+    };changeLogo17=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri17!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri17: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri17);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot17`).update({ state:4 });
+        }
+        if(this.state.uri17===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri17:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri17);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot17`).update({ state:5 });
+        }
+    };changeLogo18=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri18!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri18: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri18);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot18`).update({ state:4 });
+        }
+        if(this.state.uri18===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri18:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri18);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot18`).update({ state:5 });
+        }
+    };changeLogo19=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri19!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri19: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri19);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot19`).update({ state:4 });
+        }
+        if(this.state.uri19===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri19:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri19);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot19`).update({ state:5 });
+        }
+    };changeLogo20=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri20!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri20: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri20);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot20`).update({ state:4 });
+        }
+        if(this.state.uri20===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri20:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri20);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot20`).update({ state:5 });
+        }
+    };changeLogo21=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri21!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri21: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri21);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot21`).update({ state:4 });
+        }
+        if(this.state.uri21===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri21:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri21);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot21`).update({ state:5 });
+        }
+    };changeLogo22=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri22!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri22: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri22);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot22`).update({ state:4 });
+        }
+        if(this.state.uri22===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri22:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri22);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot22`).update({ state:5 });
+        }
+    };changeLogo23=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri23!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri23: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri23);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot23`).update({ state:4 });
+        }
+        if(this.state.uri23===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri23:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri23);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot23`).update({ state:5 });
+        }
+    };changeLogo24=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri24!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri24: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri24);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:4 });
+        }
+        if(this.state.uri24===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri24:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri24);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:5 });
+        }
+    };changeLogo25=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri25!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri25: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri25);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot25`).update({ state:4 });
+        }
+        if(this.state.uri25===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri25:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri25);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot25`).update({ state:5 });
+        }
+    };changeLogo26=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri26!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri26: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri26);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot26`).update({ state:4 });
+        }
+        if(this.state.uri26===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri26:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri26);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot26`).update({ state:5 });
+        }
+    };changeLogo27=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri27!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri27: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri27);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot27`).update({ state:4 });
+        }
+        if(this.state.uri27===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri27:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri27);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot27`).update({ state:5 });
+        }
+    };changeLogo28=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri28!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri28: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri28);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot28`).update({ state:4 });
+        }
+        if(this.state.uri28===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri28:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri28);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot28`).update({ state:5 });
+        }
+    };changeLogo29=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri29!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri29: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri29);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot29`).update({ state:4 });
+        }
+        if(this.state.uri29===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri29:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri29);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot29`).update({ state:5 });
+        }
+    };changeLogo30=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri30!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri30: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri30);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot30`).update({ state:4 });
+        }
+        if(this.state.uri30===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri30:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri30);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot30`).update({ state:5 });
+        }
+    };changeLogo31=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri31!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri31: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri31);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot31`).update({ state:4 });
+        }
+        if(this.state.uri31===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri31:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri31);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot31`).update({ state:5 });
+        }
+    };changeLogo32=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri32!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri32: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri32);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot32`).update({ state:4 });
+        }
+        if(this.state.uri32===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri32:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri32);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot32`).update({ state:5 });
+        }
+    };changeLogo33=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri33!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri33: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri33);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot33`).update({ state:4 });
+        }
+        if(this.state.uri33===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri33:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri33);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot33`).update({ state:5 });
+        }
+    };changeLogo34=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri34!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri34: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri34);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot34`).update({ state:4 });
+        }
+        if(this.state.uri34===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri34:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri34);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot34`).update({ state:5 });
+        }
+    };changeLogo35=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri35!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri35: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri35);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot35`).update({ state:4 });
+        }
+        if(this.state.uri35===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri35:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri35);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot35`).update({ state:5 });
+        }
+    };changeLogo36=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri36!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri36: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri36);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot36`).update({ state:4 });
+        }
+        if(this.state.uri36===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri36:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri36);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot36`).update({ state:5 });
+        }
+    };changeLogo37=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri37!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri37: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri37);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:4 });
+        }
+        if(this.state.uri37===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri37:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri37);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:5 });
+        }
+    };changeLogo38=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri38!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri38: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri38);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:4 });
+        }
+        if(this.state.uri38===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri38:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri38);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:5 });
+        }
+    };changeLogo39=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri39!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri39: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri39);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot39`).update({ state:4 });
+        }
+        if(this.state.uri39===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri39:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri39);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot39`).update({ state:5 });
+        }
+    };changeLogo40=()=>{
+        let user = firebase.auth().currentUser;
+        let name = this.state.changeTask1;
+        console.log(name);
+        let date = this.state.nDate;
+        if(this.state.uri40!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri40: require('./circle_bl.jpg')
+            });
+            console.log(this.state.uri40);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:4 });
+        }
+        if(this.state.uri40===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri40:require('./circle_wh.jpg')
+                }
+            );
+            console.log(this.state.uri40);
+            firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:5 });
+        }
     };
-
+    
     render() {
         return (
             <div className="App">
@@ -399,46 +1722,16 @@ export default class taskPage extends React.Component {
 
                             <tr className="tableFormat">
                                 <td><input type="textField" id="textBox1" className="first" maxLength={10}  value={this.state.changeTask1} onChange={this.handleEditTask}/><button onClick={this.addTask1}>+</button><button onClick={this.delTask1}>-</button></td>
-                                <td><img  id='id1'  className="first" src={this.state.uri1 }  alt=''  height={20} onClick={this.changeLogo1}/>
-                                    <img  id='id2'  className="first" src={this.state.uri2 }  alt=''  height={20} onClick={this.changeLogo2}/>
-                                    <img  id='id3'  className="first" src={this.state.uri3 }  alt=''  height={20} onClick={this.changeLogo3}/>
-                                    <img  id='id4'  className="first" src={this.state.uri4 }  alt=''  height={20} onClick={this.changeLogo4}/></td>
-                                <td ><img id='id5'  className="first" src={this.state.uri5 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id6'  className="first" src={this.state.uri6 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id7'  className="first" src={this.state.uri7 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id8'  className="first" src={this.state.uri8 }  alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id9'  className="first" src={this.state.uri9 }  alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id10' className="first" src={this.state.uri10} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id11' className="first" src={this.state.uri11} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id12' className="first" src={this.state.uri12} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id13' className="first" src={this.state.imgSrc13} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id14' className="first" src={this.state.imgSrc14} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id15' className="first" src={this.state.imgSrc15} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id16' className="first" src={this.state.imgSrc16} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id17' className="first" src={this.state.imgSrc17} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id18' className="first" src={this.state.imgSrc18} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id19' className="first" src={this.state.imgSrc19} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id20' className="first" src={this.state.imgSrc20} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id21' className="first" src={this.state.imgSrc21} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id22' className="first" src={this.state.imgSrc22} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id23' className="first" src={this.state.imgSrc23} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id24' className="first" src={this.state.imgSrc24} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id25' className="first" src={this.state.imgSrc25} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id26' className="first" src={this.state.imgSrc26} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id27' className="first" src={this.state.imgSrc27} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id28' className="first" src={this.state.imgSrc28} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id29' className="first" src={this.state.imgSrc29} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id30' className="first" src={this.state.imgSrc30} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id31' className="first" src={this.state.imgSrc31} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id32' className="first" src={this.state.imgSrc32} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id33' className="first" src={this.state.imgSrc33} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id34' className="first" src={this.state.imgSrc34} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id35' className="first" src={this.state.imgSrc35} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id36' className="first" src={this.state.imgSrc36} alt=''  height={20} onClick={this.toggleIcon}/></td>
-                                <td ><img id='id37' className="first" src={this.state.imgSrc37} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id38' className="first" src={this.state.imgSrc38} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id39' className="first" src={this.state.imgSrc39} alt=''  height={20} onClick={this.toggleIcon}/>
-                                    <img  id='id40' className="first" src={this.state.imgSrc40} alt=''  height={20} onClick={this.toggleIcon}/></td>
+                                <td><img  id='id1'  className="first" src={this.state.uri1 } alt=''  height={20} onClick={this.changeLogo1}/><img  id='id2'  className="first" src={this.state.uri2 } alt=''  height={20} onClick={this.changeLogo2}/><img  id='id3'  className="first" src={this.state.uri3 } alt=''  height={20} onClick={this.changeLogo3}/><img  id='id4'  className="first" src={this.state.uri4 } alt=''  height={20} onClick={this.changeLogo4}/></td>
+                                <td ><img id='id5'  className="first" src={this.state.uri5 } alt=''  height={20} onClick={this.changeLogo5}/><img  id='id6'  className="first" src={this.state.uri6 } alt=''  height={20} onClick={this.changeLogo6}/><img  id='id7'  className="first" src={this.state.uri7 } alt=''  height={20} onClick={this.changeLogo7}/><img  id='id8'  className="first" src={this.state.uri8 } alt=''  height={20} onClick={this.changeLogo8}/></td>
+                                <td ><img id='id9'  className="first" src={this.state.uri9 } alt=''  height={20} onClick={this.changeLogo9}/><img  id='id10' className="first" src={this.state.uri10} alt=''  height={20} onClick={this.changeLogo10}/><img  id='id11' className="first" src={this.state.uri11} alt=''  height={20} onClick={this.changeLogo11}/><img  id='id12' className="first" src={this.state.uri12} alt=''  height={20} onClick={this.changeLogo12}/></td>
+                                <td ><img id='id13' className="first" src={this.state.uri13} alt=''  height={20} onClick={this.changeLogo13}/><img  id='id14' className="first" src={this.state.uri14} alt=''  height={20} onClick={this.changeLogo14}/><img  id='id15' className="first" src={this.state.uri15} alt=''  height={20} onClick={this.changeLogo15}/><img  id='id16' className="first" src={this.state.uri16} alt=''  height={20} onClick={this.changeLogo16}/></td>
+                                <td ><img id='id17' className="first" src={this.state.uri17} alt=''  height={20} onClick={this.changeLogo17}/><img  id='id18' className="first" src={this.state.uri18} alt=''  height={20} onClick={this.changeLogo18}/><img  id='id19' className="first" src={this.state.uri19} alt=''  height={20} onClick={this.changeLogo19}/><img  id='id20' className="first" src={this.state.uri20} alt=''  height={20} onClick={this.changeLogo20}/></td>
+                                <td ><img id='id21' className="first" src={this.state.uri21} alt=''  height={20} onClick={this.changeLogo21}/><img  id='id22' className="first" src={this.state.uri22} alt=''  height={20} onClick={this.changeLogo22}/><img  id='id23' className="first" src={this.state.uri23} alt=''  height={20} onClick={this.changeLogo23}/><img  id='id24' className="first" src={this.state.uri24} alt=''  height={20} onClick={this.changeLogo24}/></td>
+                                <td ><img id='id25' className="first" src={this.state.uri25} alt=''  height={20} onClick={this.changeLogo25}/><img  id='id26' className="first" src={this.state.uri26} alt=''  height={20} onClick={this.changeLogo26}/><img  id='id27' className="first" src={this.state.uri27} alt=''  height={20} onClick={this.changeLogo27}/><img  id='id28' className="first" src={this.state.uri28} alt=''  height={20} onClick={this.changeLogo28}/></td>
+                                <td ><img id='id29' className="first" src={this.state.uri29} alt=''  height={20} onClick={this.changeLogo29}/><img  id='id30' className="first" src={this.state.uri30} alt=''  height={20} onClick={this.changeLogo30}/><img  id='id31' className="first" src={this.state.uri31} alt=''  height={20} onClick={this.changeLogo31}/><img  id='id32' className="first" src={this.state.uri32} alt=''  height={20} onClick={this.changeLogo32}/></td>
+                                <td ><img id='id33' className="first" src={this.state.uri33} alt=''  height={20} onClick={this.changeLogo33}/><img  id='id34' className="first" src={this.state.uri34} alt=''  height={20} onClick={this.changeLogo34}/><img  id='id35' className="first" src={this.state.uri35} alt=''  height={20} onClick={this.changeLogo35}/><img  id='id36' className="first" src={this.state.uri36} alt=''  height={20} onClick={this.changeLogo36}/></td>
+                                <td ><img id='id37' className="first" src={this.state.uri37} alt=''  height={20} onClick={this.changeLogo37}/><img  id='id38' className="first" src={this.state.uri38} alt=''  height={20} onClick={this.changeLogo38}/><img  id='id39' className="first" src={this.state.uri39} alt=''  height={20} onClick={this.changeLogo39}/><img  id='id40' className="first" src={this.state.uri40} alt=''  height={20} onClick={this.changeLogo40}/></td>
                             </tr>
                         </table>
                     </view>
