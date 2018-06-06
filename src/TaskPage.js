@@ -22,14 +22,6 @@ export default class taskPage extends React.Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange(date) {
-        let newDate = date.format("YYYY/M/D");
-        this.setState({
-            date: date,
-            nDate: newDate
-        });
-    }
-
     handleEditChange(event){
         let _changedText = event.target.value;
         switch (_changedText){
@@ -108,13 +100,42 @@ export default class taskPage extends React.Component {
         }
     }
 
-    componentWillMount(){
+    handleChange(date){
+        let newDate = date.format("YYYY-M-D");
+        this.setState({
+            date: date,
+            nDate: newDate
+        });
+        this.dataChanged(newDate);
+    }
+
+    dataChanged=(date)=>{
         let user = firebase.auth().currentUser;
-        let date = this.state.nDate;
-        //let key1 = this.state.key1;
+        console.log('change function called');
         var that = this;
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
+                if(child.val() === null){
+                    console.log('no data');
+                    that.setState({changeTask1 : ''});
+                }
+                if(child.val() !==''){
+                    that.setState({key1 : child.val()});
+                    this.task_row_one(child.val());
+                }
+            });
+        });
+    };
+
+    componentWillMount(){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        var that = this;
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child.val() === ''){
+                    that.setState({changeTask1 : ''});
+                }
                 if(child.val() !==''){
                     that.setState({key1 : child.val()});
                     this.task_row_one(child.val());
@@ -221,8 +242,9 @@ export default class taskPage extends React.Component {
 
     addTask1=()=>{
         let user = firebase.auth().currentUser;
-        let date = this.state.nDate;
-        let that = this;
+        var that = this;
+        let date = that.state.nDate;
+        console.log(date);
         let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
         that.setState({ key1: key});
         firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask1 });
@@ -235,9 +257,11 @@ export default class taskPage extends React.Component {
         let date = this.state.nDate;
         let key = this.state.key1;
         let name = this.state.changeTask1;
+        let key1 = 'key1';
         console.log(key);
         firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(key).set(null);
         firebase.database().ref(`Users/${user.uid}/${date}/`).child(name).set(null);
+        firebase.database().ref(`Users/${user.uid}/${date}/keys`).child(key1).set(null);
     };
 
     changeLogo1=()=>{
@@ -344,7 +368,7 @@ export default class taskPage extends React.Component {
                         | in 24-Hour Time</p>
                     <p className="App-clock" >
                         <DatePicker
-                            dateFormat="YYYY/M/D"
+                            dateFormat="YYYY-M-D"
                             selected={this.state.date}
                             onChange={this.handleChange}
                         />
