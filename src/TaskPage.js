@@ -863,7 +863,9 @@ export default class taskPage extends React.Component {
             console.log(this.state.uri1);
             firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:5 });
         }
-    };changeLogo2=()=>{
+    };
+
+    changeLogo2=()=>{
         let user = firebase.auth().currentUser;
         let name = this.state.changeTask1;
         console.log(name);
