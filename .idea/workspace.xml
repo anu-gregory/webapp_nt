@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="eb653bcf-812e-4c49-86ad-ccca8e16c8cc" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TaskPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/TaskPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,7 +41,7 @@
         <entry file="file://$PROJECT_DIR$/src/Login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
-              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+              <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -65,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskPage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TaskPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TaskPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="234">
+              <caret line="1548" lean-forward="true" selection-start-line="1548" selection-end-line="1548" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#337#2097#0" />
@@ -85,7 +84,6 @@
                 <element signature="e#41487#41503#0" />
                 <element signature="e#40056#40535#0" />
                 <element signature="e#69209#69688#0" />
-                <element signature="e#40555#42509#0" />
                 <element signature="e#71686#73640#0" />
                 <element signature="e#42532#43337#0" />
                 <element signature="e#43360#44165#0" />
@@ -173,11 +171,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
+            <state relative-caret-position="898">
+              <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -345,7 +343,7 @@
       <workItem from="1528970243999" duration="550000" />
       <workItem from="1529447977419" duration="3044000" />
       <workItem from="1529452306209" duration="826000" />
-      <workItem from="1529581396775" duration="8806000" />
+      <workItem from="1529581396775" duration="19260000" />
     </task>
     <task id="LOCAL-00001" summary="First Try">
       <created>1526345170373</created>
@@ -578,11 +576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529448045685</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="added functions">
+      <created>1529613515233</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1529613515233</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102039000" />
+    <option name="totallyTimeSpent" value="112493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,7 +610,7 @@
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4940476" weight="0.32901135" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.6592262" visible="true" weight="0.32090762" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.6592262" visible="true" weight="0.30470017" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -659,7 +664,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -932,14 +937,21 @@
     <entry file="file://$PROJECT_DIR$/src/Login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="898">
+          <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TaskPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="234">
+          <caret line="1548" lean-forward="true" selection-start-line="1548" selection-end-line="1548" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#337#2097#0" />
@@ -955,7 +967,6 @@
             <element signature="e#41487#41503#0" />
             <element signature="e#40056#40535#0" />
             <element signature="e#69209#69688#0" />
-            <element signature="e#40555#42509#0" />
             <element signature="e#71686#73640#0" />
             <element signature="e#42532#43337#0" />
             <element signature="e#43360#44165#0" />
@@ -1039,13 +1050,6 @@
             <element signature="e#104310#104948#0" />
             <element signature="e#104971#105609#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="154" column="1" lean-forward="true" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
         </state>
       </provider>
     </entry>
