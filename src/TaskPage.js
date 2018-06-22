@@ -14,11 +14,13 @@ export default class taskPage extends React.Component {
             tDate = today.getFullYear() + '-' + (today.getMonth('MM') + 1) + '-' + today.getDate();
         this.state = {
             date: moment(),
-            changeTask1: '',changeTask2:'',
+            changeTask1: '',changeTask2:'',changeTask3:'',changeTask4:'',
             nDate:tDate,
-            key1:'',key2:'',
+            key1:'',key2:'',key3:'',key4:'',
             uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),uri5: require('./circle_wh.jpg'),  uri6: require('./circle_wh.jpg'), uri7: require('./circle_wh.jpg'), uri8: require('./circle_wh.jpg'),uri9: require('./circle_wh.jpg'),  uri10: require('./circle_wh.jpg'), uri11: require('./circle_wh.jpg'), uri12: require('./circle_wh.jpg'),uri13: require('./circle_wh.jpg'),  uri14: require('./circle_wh.jpg'), uri15: require('./circle_wh.jpg'), uri16: require('./circle_wh.jpg'),uri17: require('./circle_wh.jpg'),  uri18: require('./circle_wh.jpg'), uri19: require('./circle_wh.jpg'), uri20: require('./circle_wh.jpg'),uri21: require('./circle_wh.jpg'),  uri22: require('./circle_wh.jpg'), uri23: require('./circle_wh.jpg'), uri24: require('./circle_wh.jpg'),uri25: require('./circle_wh.jpg'),  uri26: require('./circle_wh.jpg'), uri27: require('./circle_wh.jpg'), uri28: require('./circle_wh.jpg'),uri29: require('./circle_wh.jpg'),  uri30: require('./circle_wh.jpg'), uri31: require('./circle_wh.jpg'), uri32: require('./circle_wh.jpg'),uri33: require('./circle_wh.jpg'),  uri34: require('./circle_wh.jpg'), uri35: require('./circle_wh.jpg'), uri36: require('./circle_wh.jpg'),uri37: require('./circle_wh.jpg'),  uri38: require('./circle_wh.jpg'), uri39: require('./circle_wh.jpg'), uri40: require('./circle_wh.jpg'),
             uri41: require('./circle_wh.jpg'),  uri42: require('./circle_wh.jpg'), uri43: require('./circle_wh.jpg'), uri44: require('./circle_wh.jpg'),uri45: require('./circle_wh.jpg'),  uri46: require('./circle_wh.jpg'), uri47: require('./circle_wh.jpg'), uri48: require('./circle_wh.jpg'),uri49: require('./circle_wh.jpg'),  uri50: require('./circle_wh.jpg'), uri51: require('./circle_wh.jpg'), uri52: require('./circle_wh.jpg'),uri53: require('./circle_wh.jpg'),  uri54: require('./circle_wh.jpg'), uri55: require('./circle_wh.jpg'), uri56: require('./circle_wh.jpg'),uri57: require('./circle_wh.jpg'),  uri58: require('./circle_wh.jpg'), uri59: require('./circle_wh.jpg'), uri60: require('./circle_wh.jpg'),uri61: require('./circle_wh.jpg'),  uri62: require('./circle_wh.jpg'), uri63: require('./circle_wh.jpg'), uri64: require('./circle_wh.jpg'),uri65: require('./circle_wh.jpg'),  uri66: require('./circle_wh.jpg'), uri67: require('./circle_wh.jpg'), uri68: require('./circle_wh.jpg'),uri69: require('./circle_wh.jpg'),  uri70: require('./circle_wh.jpg'), uri71: require('./circle_wh.jpg'), uri72: require('./circle_wh.jpg'),uri73: require('./circle_wh.jpg'),  uri74: require('./circle_wh.jpg'), uri75: require('./circle_wh.jpg'), uri76: require('./circle_wh.jpg'),uri77: require('./circle_wh.jpg'),  uri78: require('./circle_wh.jpg'), uri79: require('./circle_wh.jpg'), uri80: require('./circle_wh.jpg'),
+            uri81: require('./circle_wh.jpg'),  uri82: require('./circle_wh.jpg'), uri83: require('./circle_wh.jpg'), uri84: require('./circle_wh.jpg'),uri85: require('./circle_wh.jpg'),  uri86: require('./circle_wh.jpg'), uri87: require('./circle_wh.jpg'), uri88: require('./circle_wh.jpg'),uri89: require('./circle_wh.jpg'),  uri90: require('./circle_wh.jpg'), uri91: require('./circle_wh.jpg'), uri92: require('./circle_wh.jpg'),uri93: require('./circle_wh.jpg'),  uri94: require('./circle_wh.jpg'), uri95: require('./circle_wh.jpg'), uri96: require('./circle_wh.jpg'),uri97: require('./circle_wh.jpg'),  uri98: require('./circle_wh.jpg'), uri99: require('./circle_wh.jpg'), uri100: require('./circle_wh.jpg'),uri101: require('./circle_wh.jpg'),  uri102: require('./circle_wh.jpg'), uri103: require('./circle_wh.jpg'), uri104: require('./circle_wh.jpg'),uri105: require('./circle_wh.jpg'),  uri106: require('./circle_wh.jpg'), uri107: require('./circle_wh.jpg'), uri108: require('./circle_wh.jpg'),uri109: require('./circle_wh.jpg'),  uri110: require('./circle_wh.jpg'), uri111: require('./circle_wh.jpg'), uri112: require('./circle_wh.jpg'),uri113: require('./circle_wh.jpg'),  uri114: require('./circle_wh.jpg'), uri115: require('./circle_wh.jpg'), uri116: require('./circle_wh.jpg'),uri117: require('./circle_wh.jpg'),  uri118: require('./circle_wh.jpg'), uri119: require('./circle_wh.jpg'), uri120: require('./circle_wh.jpg'),
+            uri121: require('./circle_wh.jpg'),  uri122: require('./circle_wh.jpg'), uri123: require('./circle_wh.jpg'), uri124: require('./circle_wh.jpg'),uri125: require('./circle_wh.jpg'),  uri126: require('./circle_wh.jpg'), uri127: require('./circle_wh.jpg'), uri128: require('./circle_wh.jpg'),uri129: require('./circle_wh.jpg'),  uri130: require('./circle_wh.jpg'), uri131: require('./circle_wh.jpg'), uri132: require('./circle_wh.jpg'),uri133: require('./circle_wh.jpg'),  uri134: require('./circle_wh.jpg'), uri135: require('./circle_wh.jpg'), uri136: require('./circle_wh.jpg'),uri137: require('./circle_wh.jpg'),  uri138: require('./circle_wh.jpg'), uri139: require('./circle_wh.jpg'), uri140: require('./circle_wh.jpg'),uri141: require('./circle_wh.jpg'),  uri142: require('./circle_wh.jpg'), uri143: require('./circle_wh.jpg'), uri144: require('./circle_wh.jpg'),uri145: require('./circle_wh.jpg'),  uri146: require('./circle_wh.jpg'), uri147: require('./circle_wh.jpg'), uri148: require('./circle_wh.jpg'),uri149: require('./circle_wh.jpg'),  uri150: require('./circle_wh.jpg'), uri151: require('./circle_wh.jpg'), uri152: require('./circle_wh.jpg'),uri153: require('./circle_wh.jpg'),  uri154: require('./circle_wh.jpg'), uri155: require('./circle_wh.jpg'), uri156: require('./circle_wh.jpg'),uri157: require('./circle_wh.jpg'),  uri158: require('./circle_wh.jpg'), uri159: require('./circle_wh.jpg'), uri160: require('./circle_wh.jpg'),
 
         };
         this.handleChange = this.handleChange.bind(this);
@@ -113,33 +115,54 @@ export default class taskPage extends React.Component {
 
     dataChanged=(date)=>{
         let user = firebase.auth().currentUser;
-        console.log('change function called');
         let that = this;
         this.setState({changeTask1:'', uri1: require('./circle_wh.jpg'),  uri2: require('./circle_wh.jpg'), uri3: require('./circle_wh.jpg'), uri4: require('./circle_wh.jpg'),uri5: require('./circle_wh.jpg'),  uri6: require('./circle_wh.jpg'), uri7: require('./circle_wh.jpg'), uri8: require('./circle_wh.jpg'),uri9: require('./circle_wh.jpg'),  uri10: require('./circle_wh.jpg'), uri11: require('./circle_wh.jpg'), uri12: require('./circle_wh.jpg'),uri13: require('./circle_wh.jpg'),  uri14: require('./circle_wh.jpg'), uri15: require('./circle_wh.jpg'), uri16: require('./circle_wh.jpg'),uri17: require('./circle_wh.jpg'),  uri18: require('./circle_wh.jpg'), uri19: require('./circle_wh.jpg'), uri20: require('./circle_wh.jpg'),uri21: require('./circle_wh.jpg'),  uri22: require('./circle_wh.jpg'), uri23: require('./circle_wh.jpg'), uri24: require('./circle_wh.jpg'),uri25: require('./circle_wh.jpg'),  uri26: require('./circle_wh.jpg'), uri27: require('./circle_wh.jpg'), uri28: require('./circle_wh.jpg'),uri29: require('./circle_wh.jpg'),  uri30: require('./circle_wh.jpg'), uri31: require('./circle_wh.jpg'), uri32: require('./circle_wh.jpg'),uri33: require('./circle_wh.jpg'),  uri34: require('./circle_wh.jpg'), uri35: require('./circle_wh.jpg'), uri36: require('./circle_wh.jpg'),uri37: require('./circle_wh.jpg'),  uri38: require('./circle_wh.jpg'), uri39: require('./circle_wh.jpg'), uri40: require('./circle_wh.jpg'),
             changeTask2:'',uri41: require('./circle_wh.jpg'),  uri42: require('./circle_wh.jpg'), uri43: require('./circle_wh.jpg'), uri44: require('./circle_wh.jpg'),uri45: require('./circle_wh.jpg'),  uri46: require('./circle_wh.jpg'), uri47: require('./circle_wh.jpg'), uri48: require('./circle_wh.jpg'),uri49: require('./circle_wh.jpg'),  uri50: require('./circle_wh.jpg'), uri51: require('./circle_wh.jpg'), uri52: require('./circle_wh.jpg'),uri53: require('./circle_wh.jpg'),  uri54: require('./circle_wh.jpg'), uri55: require('./circle_wh.jpg'), uri56: require('./circle_wh.jpg'),uri57: require('./circle_wh.jpg'),  uri58: require('./circle_wh.jpg'), uri59: require('./circle_wh.jpg'), uri60: require('./circle_wh.jpg'),uri61: require('./circle_wh.jpg'),  uri62: require('./circle_wh.jpg'), uri63: require('./circle_wh.jpg'), uri64: require('./circle_wh.jpg'),uri65: require('./circle_wh.jpg'),  uri66: require('./circle_wh.jpg'), uri67: require('./circle_wh.jpg'), uri68: require('./circle_wh.jpg'),uri69: require('./circle_wh.jpg'),  uri70: require('./circle_wh.jpg'), uri71: require('./circle_wh.jpg'), uri72: require('./circle_wh.jpg'),uri73: require('./circle_wh.jpg'),  uri74: require('./circle_wh.jpg'), uri75: require('./circle_wh.jpg'), uri76: require('./circle_wh.jpg'),uri77: require('./circle_wh.jpg'),  uri78: require('./circle_wh.jpg'), uri79: require('./circle_wh.jpg'), uri80: require('./circle_wh.jpg'),
+            changeTask3:'',uri81: require('./circle_wh.jpg'),  uri82: require('./circle_wh.jpg'), uri83: require('./circle_wh.jpg'), uri84: require('./circle_wh.jpg'),uri85: require('./circle_wh.jpg'),  uri86: require('./circle_wh.jpg'), uri87: require('./circle_wh.jpg'), uri88: require('./circle_wh.jpg'),uri89: require('./circle_wh.jpg'),  uri90: require('./circle_wh.jpg'), uri91: require('./circle_wh.jpg'), uri92: require('./circle_wh.jpg'),uri93: require('./circle_wh.jpg'),  uri94: require('./circle_wh.jpg'), uri95: require('./circle_wh.jpg'), uri96: require('./circle_wh.jpg'),uri97: require('./circle_wh.jpg'),  uri98: require('./circle_wh.jpg'), uri99: require('./circle_wh.jpg'), uri100: require('./circle_wh.jpg'),uri101: require('./circle_wh.jpg'),  uri102: require('./circle_wh.jpg'), uri103: require('./circle_wh.jpg'), uri104: require('./circle_wh.jpg'),uri105: require('./circle_wh.jpg'),  uri106: require('./circle_wh.jpg'), uri107: require('./circle_wh.jpg'), uri108: require('./circle_wh.jpg'),uri109: require('./circle_wh.jpg'),  uri110: require('./circle_wh.jpg'), uri111: require('./circle_wh.jpg'), uri112: require('./circle_wh.jpg'),uri113: require('./circle_wh.jpg'),  uri114: require('./circle_wh.jpg'), uri115: require('./circle_wh.jpg'), uri116: require('./circle_wh.jpg'),uri117: require('./circle_wh.jpg'),  uri118: require('./circle_wh.jpg'), uri119: require('./circle_wh.jpg'), uri120: require('./circle_wh.jpg'),
+            changeTask4:'',uri121: require('./circle_wh.jpg'),  uri122: require('./circle_wh.jpg'), uri123: require('./circle_wh.jpg'), uri124: require('./circle_wh.jpg'),uri125: require('./circle_wh.jpg'),  uri126: require('./circle_wh.jpg'), uri127: require('./circle_wh.jpg'), uri128: require('./circle_wh.jpg'),uri129: require('./circle_wh.jpg'),  uri130: require('./circle_wh.jpg'), uri131: require('./circle_wh.jpg'), uri132: require('./circle_wh.jpg'),uri133: require('./circle_wh.jpg'),  uri134: require('./circle_wh.jpg'), uri135: require('./circle_wh.jpg'), uri136: require('./circle_wh.jpg'),uri137: require('./circle_wh.jpg'),  uri138: require('./circle_wh.jpg'), uri139: require('./circle_wh.jpg'), uri140: require('./circle_wh.jpg'),uri141: require('./circle_wh.jpg'),  uri142: require('./circle_wh.jpg'), uri143: require('./circle_wh.jpg'), uri144: require('./circle_wh.jpg'),uri145: require('./circle_wh.jpg'),  uri146: require('./circle_wh.jpg'), uri147: require('./circle_wh.jpg'), uri148: require('./circle_wh.jpg'),uri149: require('./circle_wh.jpg'),  uri150: require('./circle_wh.jpg'), uri151: require('./circle_wh.jpg'), uri152: require('./circle_wh.jpg'),uri153: require('./circle_wh.jpg'),  uri154: require('./circle_wh.jpg'), uri155: require('./circle_wh.jpg'), uri156: require('./circle_wh.jpg'),uri157: require('./circle_wh.jpg'),  uri158: require('./circle_wh.jpg'), uri159: require('./circle_wh.jpg'), uri160: require('./circle_wh.jpg'),
 
         });
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key1`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
                 if(child === null){
-                    console.log('no data');
                     that.setState({changeTask1 : ''});
                 }
                 if(child.val() !==''){
                     that.setState({key1 : child.val()});
-                    this.task_row_two(child.val());
+                    this.task_row_one(child.val());
                 }
             });
         });
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key2`).once('value').then((snapshot)=>{
             snapshot.forEach((child)=>{
                 if(child === null){
-                    console.log('no data');
                     that.setState({changeTask2 : ''});
                 }
                 if(child.val() !==''){
                     that.setState({key2 : child.val()});
-                    this.task_row_one(child.val());
+                    this.task_row_two(child.val());
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key3`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child === null){
+                    that.setState({changeTask3 : ''});
+                }
+                if(child.val() !==''){
+                    that.setState({key3 : child.val()});
+                    this.task_row_three(child.val());
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key4`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child === null){
+                    that.setState({changeTask4 : ''});
+                }
+                if(child.val() !==''){
+                    that.setState({key4 : child.val()});
+                    this.task_row_four(child.val());
                 }
             });
         });
@@ -168,6 +191,28 @@ export default class taskPage extends React.Component {
                 if(child.val() !==''){
                     that.setState({key2 : child.val()});
                     this.task_row_two(child.val());
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key3`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child.val() === ''){
+                    that.setState({changeTask3 : ''});
+                }
+                if(child.val() !==''){
+                    that.setState({key3 : child.val()});
+                    this.task_row_three(child.val());
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key4`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child.val() === ''){
+                    that.setState({changeTask4 : ''});
+                }
+                if(child.val() !==''){
+                    that.setState({key4 : child.val()});
+                    this.task_row_four(child.val());
                 }
             });
         });
@@ -200,6 +245,36 @@ export default class taskPage extends React.Component {
                 if(child.val().name !==''){
                     that.setState({changeTask2 : child.val()});
                     this.bubble_row_two();
+                }
+            });
+        });
+    }
+
+    task_row_three(key){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let key3 = key;
+        let that = this;
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/${key3}`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child.val().name !==''){
+                    that.setState({changeTask3 : child.val()});
+                    this.bubble_row_three();
+                }
+            });
+        });
+    }
+
+    task_row_four(key){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let key4 = key;
+        let that = this;
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/${key4}`).once('value').then((snapshot)=>{
+            snapshot.forEach((child)=>{
+                if(child.val().name !==''){
+                    that.setState({changeTask4 : child.val()});
+                    this.bubble_row_four();
                 }
             });
         });
@@ -1497,6 +1572,1298 @@ export default class taskPage extends React.Component {
         });
     }
 
+    bubble_row_three(){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let that = this;
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot1`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri81: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri81:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot2`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri82: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri82:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot3`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri83: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri83:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot4`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri84: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri84:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot5`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri85: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri85:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot6`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri86: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri86:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot7`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri87: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri87:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot8`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri88: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri88:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot9`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri89: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri89:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot10`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri90: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri90:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot11`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri91: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri91:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot12`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri92: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri92:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot13`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri93: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri93:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot14`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri94: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri94:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot15`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri95: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri95:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot16`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri96: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri96:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot17`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri97: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri97:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot18`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri98: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri98:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot19`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri99: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri99:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot20`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri100: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri100:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot21`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri101: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri101:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot22`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri102: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri102:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot23`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri103: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri103:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot24`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri104: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri104:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot25`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri105: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri105:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot26`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri106: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri106:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot27`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri107: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri107:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot28`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri108: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri108:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot29`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri109: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri109:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot30`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri110: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri110:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot31`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri111: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri111:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot32`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri112: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri112:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot33`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri113: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri113:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot34`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri114: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri114:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot35`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri115: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri115:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot36`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri116: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri116:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot37`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri117: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri117:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot38`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri118: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri118:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot39`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri119: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri119:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask3}/dot40`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri120: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri120:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+    }
+
+    bubble_row_four(){
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let that = this;
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot1`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri121: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri121:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot2`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri122: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri122:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot3`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri123: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri123:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot4`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri124: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri124:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot5`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri125: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri125:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot6`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri126: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri126:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot7`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri127: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri127:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot8`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri128: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri128:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot9`) .once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri129: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri129:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot10`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri130: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri130:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot11`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri131: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri131:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot12`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri132: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri132:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot13`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri133: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri133:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot14`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri134: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri134:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot15`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri135: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri135:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot16`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri136: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri136:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot17`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri137: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri137:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot18`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri138: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri138:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot19`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri139: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri139:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot20`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri140: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri140:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot21`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri141: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri141:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot22`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri142: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri142:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot23`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri143: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri143:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot24`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri144: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri144:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot25`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri145: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri145:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot26`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri146: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri146:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot27`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri147: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri147:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot28`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri148: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri148:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot29`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri149: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri149:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot30`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri150: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri150:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot31`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri151: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri151:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot32`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri152: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri152:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot33`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri153: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri153:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot34`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri154: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri154:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot35`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri155: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri155:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot36`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri156: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri156:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot37`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri157: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri157:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot38`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri158: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri158:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot39`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri159: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri159:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+        firebase.database().ref(`Users/${user.uid}/${date}/${this.state.changeTask4}/dot40`).once('value').then((snapshot)=>{
+            snapshot.forEach(function(child) {
+                if(child.val()!==4) {
+                    that.setState({
+                        uri160: require('./circle_wh.jpg')
+                    });
+                }
+                if(child.val()===4) {
+                    that.setState(
+                        {
+                            uri160:require('./circle_bl.jpg')
+                        }
+                    );
+                }
+            });
+        });
+    }
+
     handleEditTask1=(event)=>{
         this.setState({
             changeTask1: event.target.value
@@ -1506,6 +2873,18 @@ export default class taskPage extends React.Component {
     handleEditTask2=(event)=>{
         this.setState({
            changeTask2: event.target.value
+        });
+    };
+
+    handleEditTask3=(event)=>{
+        this.setState({
+            changeTask3: event.target.value
+        });
+    };
+
+    handleEditTask4=(event)=>{
+        this.setState({
+            changeTask4: event.target.value
         });
     };
 
@@ -1528,6 +2907,28 @@ export default class taskPage extends React.Component {
         that.setState({ key2: key});
         firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask2 });
         firebase.database().ref(`Users/${user.uid}/${date}/keys/key2`).set({ key: key });
+        alert("Task Added");
+    };
+
+    addTask3=()=>{
+        let user = firebase.auth().currentUser;
+        let that = this;
+        let date = that.state.nDate;
+        let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
+        that.setState({ key3: key});
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask3 });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key3`).set({ key: key });
+        alert("Task Added");
+    };
+
+    addTask4=()=>{
+        let user = firebase.auth().currentUser;
+        let that = this;
+        let date = that.state.nDate;
+        let key = firebase.database().ref(`Users/${user.uid}/${date}/tasks`).push().key;
+        that.setState({ key4: key});
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks`).child(key).set({ name: this.state.changeTask4 });
+        firebase.database().ref(`Users/${user.uid}/${date}/keys/key4`).set({ key: key });
         alert("Task Added");
     };
 
@@ -1559,6 +2960,37 @@ export default class taskPage extends React.Component {
         firebase.database().ref(`Users/${user.uid}/${date}/keys`).child(key2).set(null);
         this.setState({
             changeTask2:'',uri41: require('./circle_wh.jpg'),  uri42: require('./circle_wh.jpg'), uri43: require('./circle_wh.jpg'), uri44: require('./circle_wh.jpg'),uri45: require('./circle_wh.jpg'),  uri46: require('./circle_wh.jpg'), uri47: require('./circle_wh.jpg'), uri48: require('./circle_wh.jpg'),uri49: require('./circle_wh.jpg'),  uri50: require('./circle_wh.jpg'), uri51: require('./circle_wh.jpg'), uri52: require('./circle_wh.jpg'),uri53: require('./circle_wh.jpg'),  uri54: require('./circle_wh.jpg'), uri55: require('./circle_wh.jpg'), uri56: require('./circle_wh.jpg'),uri57: require('./circle_wh.jpg'),  uri58: require('./circle_wh.jpg'), uri59: require('./circle_wh.jpg'), uri60: require('./circle_wh.jpg'),uri61: require('./circle_wh.jpg'),  uri62: require('./circle_wh.jpg'), uri63: require('./circle_wh.jpg'), uri64: require('./circle_wh.jpg'),uri65: require('./circle_wh.jpg'),  uri66: require('./circle_wh.jpg'), uri67: require('./circle_wh.jpg'), uri68: require('./circle_wh.jpg'),uri69: require('./circle_wh.jpg'),  uri70: require('./circle_wh.jpg'), uri71: require('./circle_wh.jpg'), uri72: require('./circle_wh.jpg'),uri73: require('./circle_wh.jpg'),  uri74: require('./circle_wh.jpg'), uri75: require('./circle_wh.jpg'), uri76: require('./circle_wh.jpg'),uri77: require('./circle_wh.jpg'),  uri78: require('./circle_wh.jpg'), uri79: require('./circle_wh.jpg'), uri80: require('./circle_wh.jpg'),
+        })
+    };
+
+    delTask3=()=>{
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let key = this.state.key3;
+        let name = this.state.changeTask3;
+        let key3 = 'key3';
+        console.log(key);
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(key).set(null);
+        firebase.database().ref(`Users/${user.uid}/${date}/`).child(name).set(null);
+        firebase.database().ref(`Users/${user.uid}/${date}/keys`).child(key3).set(null);
+        this.setState({
+            changeTask3:'',
+            uri81: require('./circle_wh.jpg'),  uri82: require('./circle_wh.jpg'), uri83: require('./circle_wh.jpg'), uri84: require('./circle_wh.jpg'),uri85: require('./circle_wh.jpg'),  uri86: require('./circle_wh.jpg'), uri87: require('./circle_wh.jpg'), uri88: require('./circle_wh.jpg'),uri89: require('./circle_wh.jpg'),  uri90: require('./circle_wh.jpg'), uri91: require('./circle_wh.jpg'), uri92: require('./circle_wh.jpg'),uri93: require('./circle_wh.jpg'),  uri94: require('./circle_wh.jpg'), uri95: require('./circle_wh.jpg'), uri96: require('./circle_wh.jpg'),uri97: require('./circle_wh.jpg'),  uri98: require('./circle_wh.jpg'), uri99: require('./circle_wh.jpg'), uri100: require('./circle_wh.jpg'),uri101: require('./circle_wh.jpg'),  uri102: require('./circle_wh.jpg'), uri103: require('./circle_wh.jpg'), uri104: require('./circle_wh.jpg'),uri105: require('./circle_wh.jpg'),  uri106: require('./circle_wh.jpg'), uri107: require('./circle_wh.jpg'), uri108: require('./circle_wh.jpg'),uri109: require('./circle_wh.jpg'),  uri110: require('./circle_wh.jpg'), uri111: require('./circle_wh.jpg'), uri112: require('./circle_wh.jpg'),uri113: require('./circle_wh.jpg'),  uri114: require('./circle_wh.jpg'), uri115: require('./circle_wh.jpg'), uri116: require('./circle_wh.jpg'),uri117: require('./circle_wh.jpg'),  uri118: require('./circle_wh.jpg'), uri119: require('./circle_wh.jpg'), uri120: require('./circle_wh.jpg'),
+        })
+    };
+
+    delTask4=()=>{
+        let user = firebase.auth().currentUser;
+        let date = this.state.nDate;
+        let key = this.state.key4;
+        let name = this.state.changeTask4;
+        let key4 = 'key4';
+        firebase.database().ref(`Users/${user.uid}/${date}/tasks/`).child(key).set(null);
+        firebase.database().ref(`Users/${user.uid}/${date}/`).child(name).set(null);
+        firebase.database().ref(`Users/${user.uid}/${date}/keys`).child(key4).set(null);
+        this.setState({
+            changeTask4:'',
+            uri121: require('./circle_wh.jpg'),  uri122: require('./circle_wh.jpg'), uri123: require('./circle_wh.jpg'), uri124: require('./circle_wh.jpg'),uri125: require('./circle_wh.jpg'),  uri126: require('./circle_wh.jpg'), uri127: require('./circle_wh.jpg'), uri128: require('./circle_wh.jpg'),uri129: require('./circle_wh.jpg'),  uri130: require('./circle_wh.jpg'), uri131: require('./circle_wh.jpg'), uri132: require('./circle_wh.jpg'),uri133: require('./circle_wh.jpg'),  uri134: require('./circle_wh.jpg'), uri135: require('./circle_wh.jpg'), uri136: require('./circle_wh.jpg'),uri137: require('./circle_wh.jpg'),  uri138: require('./circle_wh.jpg'), uri139: require('./circle_wh.jpg'), uri140: require('./circle_wh.jpg'),uri141: require('./circle_wh.jpg'),  uri142: require('./circle_wh.jpg'), uri143: require('./circle_wh.jpg'), uri144: require('./circle_wh.jpg'),uri145: require('./circle_wh.jpg'),  uri146: require('./circle_wh.jpg'), uri147: require('./circle_wh.jpg'), uri148: require('./circle_wh.jpg'),uri149: require('./circle_wh.jpg'),  uri150: require('./circle_wh.jpg'), uri151: require('./circle_wh.jpg'), uri152: require('./circle_wh.jpg'),uri153: require('./circle_wh.jpg'),  uri154: require('./circle_wh.jpg'), uri155: require('./circle_wh.jpg'), uri156: require('./circle_wh.jpg'),uri157: require('./circle_wh.jpg'),  uri158: require('./circle_wh.jpg'), uri159: require('./circle_wh.jpg'), uri160: require('./circle_wh.jpg'),
         })
     };
 
@@ -3064,7 +4496,1046 @@ export default class taskPage extends React.Component {
                 }
             );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:5 });}
     };
-            
+    changeLogo81=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri81!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri81: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:4 });}
+        if(this.state.uri81===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri81:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:5 });}
+    };
+    changeLogo82=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri82!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri82: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:4 });}
+        if(this.state.uri82===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri82:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:5 });}
+    };
+    changeLogo83=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri83!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri83: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:4 });}
+        if(this.state.uri83===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri83:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:5 });}
+    };
+    changeLogo84=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri84!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri84: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:4 });}
+        if(this.state.uri84===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri84:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:5 });}
+    };
+    changeLogo85=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri85!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri85: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).update({ state:4 });}
+        if(this.state.uri85===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri85:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).update({ state:5 });}
+    };
+    changeLogo86=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri86!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri86: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot6`).update({ state:4 });}
+        if(this.state.uri86===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri86:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot6`).update({ state:5 });}
+    };
+    changeLogo87=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri87!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri87: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot7`).update({ state:4 });}
+        if(this.state.uri87===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri87:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot7`).update({ state:5 });}
+    };
+    changeLogo88=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri88!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri88: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot8`).update({ state:4 });}
+        if(this.state.uri88===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri88:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot8`).update({ state:5 });}
+    };
+    changeLogo89=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri89!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri89: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot9`).update({ state:4 });}
+        if(this.state.uri89===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri89:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot9`).update({ state:5 });}
+    };
+    changeLogo90=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri90!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri90: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot10`).update({ state:4 });}
+        if(this.state.uri90===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri90:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot10`).update({ state:5 });}
+    };
+    changeLogo91=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri91!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri91: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot11`).update({ state:4 });}
+        if(this.state.uri91===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri91:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot11`).update({ state:5 });}
+    };
+    changeLogo92=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri92!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri92: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot12`).update({ state:4 });}
+        if(this.state.uri92===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri92:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot12`).update({ state:5 });}
+    };
+    changeLogo93=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri93!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri93: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot13`).update({ state:4 });}
+        if(this.state.uri93===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri93:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot13`).update({ state:5 });}
+    };
+    changeLogo94=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri94!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri94: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot14`).update({ state:4 });}
+        if(this.state.uri94===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri94:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot14`).update({ state:5 });}
+    };
+    changeLogo95=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri95!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri95: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot15`).update({ state:4 });}
+        if(this.state.uri95===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri95:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot15`).update({ state:5 });}
+    };
+    changeLogo96=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri96!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri96: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot16`).update({ state:4 });}
+        if(this.state.uri96===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri96:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot16`).update({ state:5 });}
+    };
+    changeLogo97=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri97!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri97: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot17`).update({ state:4 });}
+        if(this.state.uri97===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri97:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot17`).update({ state:5 });}
+    };
+    changeLogo98=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri98!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri98: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot18`).update({ state:4 });}
+        if(this.state.uri98===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri98:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot18`).update({ state:5 });}
+    };
+    changeLogo99=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri99!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri99: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot19`).update({ state:4 });}
+        if(this.state.uri99===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri99:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot19`).update({ state:5 });}
+    };
+    changeLogo100=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri100!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri100: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot20`).update({ state:4 });}
+        if(this.state.uri100===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri100:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot20`).update({ state:5 });}
+    };
+    changeLogo101=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri101!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri101: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot21`).update({ state:4 });}
+        if(this.state.uri101===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri101:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot21`).update({ state:5 });}
+    };
+    changeLogo102=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri102!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri102: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot22`).update({ state:4 });}
+        if(this.state.uri102===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri102:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot22`).update({ state:5 });}
+    };
+    changeLogo103=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri103!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri103: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot23`).update({ state:4 });}
+        if(this.state.uri103===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri103:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot23`).update({ state:5 });}
+    };
+    changeLogo104=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri104!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri104: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:4 });}
+        if(this.state.uri104===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri104:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:5 });}
+    };
+    changeLogo105=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri105!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri105: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot25`).update({ state:4 });}
+        if(this.state.uri105===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri105:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot25`).update({ state:5 });}
+    };
+    changeLogo106=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri106!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri106: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot26`).update({ state:4 });}
+        if(this.state.uri106===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri106:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot26`).update({ state:5 });}
+    };
+    changeLogo107=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri107!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri107: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot27`).update({ state:4 });}
+        if(this.state.uri107===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri107:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot27`).update({ state:5 });}
+    };
+    changeLogo108=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri108!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri108: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot28`).update({ state:4 });}
+        if(this.state.uri108===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri108:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot28`).update({ state:5 });}
+    };
+    changeLogo109=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri109!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri109: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot29`).update({ state:4 });}
+        if(this.state.uri109===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri109:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot29`).update({ state:5 });}
+    };
+    changeLogo110=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri110!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri110: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot30`).update({ state:4 });}
+        if(this.state.uri110===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri110:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot30`).update({ state:5 });}
+    };
+    changeLogo111=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri111!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri111: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot31`).update({ state:4 });}
+        if(this.state.uri111===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri111:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot31`).update({ state:5 });}
+    };
+    changeLogo112=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri112!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri112: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot32`).update({ state:4 });}
+        if(this.state.uri112===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri112:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot32`).update({ state:5 });}
+    };
+    changeLogo113=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri113!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri113: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot33`).update({ state:4 });}
+        if(this.state.uri113===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri113:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot33`).update({ state:5 });}
+    };
+    changeLogo114=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri114!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri114: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot34`).update({ state:4 });}
+        if(this.state.uri114===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri114:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot34`).update({ state:5 });}
+    };
+    changeLogo115=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri115!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri115: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot35`).update({ state:4 });}
+        if(this.state.uri115===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri115:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot35`).update({ state:5 });}
+    };
+    changeLogo116=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri116!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri116: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot36`).update({ state:4 });}
+        if(this.state.uri116===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri116:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot36`).update({ state:5 });}
+    };
+    changeLogo117=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri117!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri117: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot37`).update({ state:4 });}
+        if(this.state.uri117===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri117:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot37`).update({ state:5 });}
+    };
+    changeLogo118=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri118!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri118: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:4 });}
+        if(this.state.uri118===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri118:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:5 });}
+    };
+    changeLogo119=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri119!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri119: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot39`).update({ state:4 });}
+        if(this.state.uri119===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri119:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot39`).update({ state:5 });}
+    };
+    changeLogo120=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask3;let date = this.state.nDate;
+        if(this.state.uri120!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri120: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:4 });}
+        if(this.state.uri120===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri120:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:5 });}
+    };
+    changeLogo121=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri121!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri121: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:4 });}
+        if(this.state.uri121===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri121:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot1`).update({ state:5 });}
+    };
+    changeLogo122=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri122!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri122: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:4 });}
+        if(this.state.uri122===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri122:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot2`).update({ state:5 });}
+    };
+    changeLogo123=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri123!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri123: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:4 });}
+        if(this.state.uri123===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri123:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot3`).update({ state:5 });}
+    };
+    changeLogo124=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri124!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri124: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:4 });}
+        if(this.state.uri124===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri124:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot4`).update({ state:5 });}
+    };
+    changeLogo125=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri125!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri125: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).update({ state:4 });}
+        if(this.state.uri125===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri125:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot5`).update({ state:5 });}
+    };
+    changeLogo126=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri126!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri126: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot6`).update({ state:4 });}
+        if(this.state.uri126===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri126:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot6`).update({ state:5 });}
+    };
+    changeLogo127=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri127!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri127: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot7`).update({ state:4 });}
+        if(this.state.uri127===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri127:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot7`).update({ state:5 });}
+    };
+    changeLogo128=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri128!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri128: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot8`).update({ state:4 });}
+        if(this.state.uri128===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri128:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot8`).update({ state:5 });}
+    };
+    changeLogo129=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri129!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri129: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot9`).update({ state:4 });}
+        if(this.state.uri129===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri129:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot9`).update({ state:5 });}
+    };
+    changeLogo130=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri130!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri130: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot10`).update({ state:4 });}
+        if(this.state.uri130===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri130:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot10`).update({ state:5 });}
+    };
+    changeLogo131=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri131!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri131: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot11`).update({ state:4 });}
+        if(this.state.uri131===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri131:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot11`).update({ state:5 });}
+    };
+    changeLogo132=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri132!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri132: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot12`).update({ state:4 });}
+        if(this.state.uri132===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri132:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot12`).update({ state:5 });}
+    };
+    changeLogo133=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri133!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri133: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot13`).update({ state:4 });}
+        if(this.state.uri133===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri133:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot13`).update({ state:5 });}
+    };
+    changeLogo134=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri134!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri134: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot14`).update({ state:4 });}
+        if(this.state.uri134===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri134:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot14`).update({ state:5 });}
+    };
+    changeLogo135=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri135!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri135: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot15`).update({ state:4 });}
+        if(this.state.uri135===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri135:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot15`).update({ state:5 });}
+    };
+    changeLogo136=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri136!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri136: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot16`).update({ state:4 });}
+        if(this.state.uri136===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri136:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot16`).update({ state:5 });}
+    };
+    changeLogo137=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri137!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri137: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot17`).update({ state:4 });}
+        if(this.state.uri137===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri137:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot17`).update({ state:5 });}
+    };
+    changeLogo138=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri138!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri138: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot18`).update({ state:4 });}
+        if(this.state.uri138===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri138:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot18`).update({ state:5 });}
+    };
+    changeLogo139=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri139!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri139: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot19`).update({ state:4 });}
+        if(this.state.uri139===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri139:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot19`).update({ state:5 });}
+    };
+    changeLogo140=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri140!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri140: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot20`).update({ state:4 });}
+        if(this.state.uri140===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri140:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot20`).update({ state:5 });}
+    };
+    changeLogo141=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri141!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri141: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot21`).update({ state:4 });}
+        if(this.state.uri141===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri141:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot22`).update({ state:5 });}
+    };
+    changeLogo142=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri142!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri142: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot23`).update({ state:4 });}
+        if(this.state.uri142===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri142:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot23`).update({ state:5 });}
+    };
+    changeLogo143=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri143!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri143: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:4 });}
+        if(this.state.uri143===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri143:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:5 });}
+    };
+    changeLogo144=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri144!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri144: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:4 });}
+        if(this.state.uri144===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri144:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot24`).update({ state:5 });}
+    };
+    changeLogo145=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri145!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri145: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot25`).update({ state:4 });}
+        if(this.state.uri145===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri145:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot25`).update({ state:5 });}
+    };
+    changeLogo146=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri146!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri146: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot26`).update({ state:4 });}
+        if(this.state.uri146===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri146:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot26`).update({ state:5 });}
+    };
+    changeLogo147=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri147!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri147: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot27`).update({ state:4 });}
+        if(this.state.uri147===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri147:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot27`).update({ state:5 });}
+    };
+    changeLogo148=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri148!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri148: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot28`).update({ state:4 });}
+        if(this.state.uri148===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri148:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot28`).update({ state:5 });}
+    };
+    changeLogo149=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri149!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri149: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot29`).update({ state:4 });}
+        if(this.state.uri149===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri149:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot29`).update({ state:5 });}
+    };
+    changeLogo150=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri150!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri150: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot30`).update({ state:4 });}
+        if(this.state.uri150===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri150:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot30`).update({ state:5 });}
+    };
+    changeLogo151=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri151!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri151: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot31`).update({ state:4 });}
+        if(this.state.uri151===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri151:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot31`).update({ state:5 });}
+    };
+    changeLogo152=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri152!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri152: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot32`).update({ state:4 });}
+        if(this.state.uri152===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri152:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot32`).update({ state:5 });}
+    };
+    changeLogo153=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri153!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri153: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot33`).update({ state:4 });}
+        if(this.state.uri153===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri153:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot33`).update({ state:5 });}
+    };
+    changeLogo154=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri154!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri154: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot34`).update({ state:4 });}
+        if(this.state.uri154===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri154:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot34`).update({ state:5 });}
+    };
+    changeLogo155=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri155!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri155: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot35`).update({ state:4 });}
+        if(this.state.uri155===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri155:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot35`).update({ state:5 });}
+    };
+    changeLogo156=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri156!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri156: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot36`).update({ state:4 });}
+        if(this.state.uri156===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri156:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot36`).update({ state:5 });}
+    };
+    changeLogo157=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri157!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri157: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot37`).update({ state:4 });}
+        if(this.state.uri157===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri157:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot37`).update({ state:5 });}
+    };
+    changeLogo158=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri158!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri158: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:4 });}
+        if(this.state.uri158===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri158:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot38`).update({ state:5 });}
+    };
+    changeLogo159=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri159!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri159: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot39`).update({ state:4 });}
+        if(this.state.uri159===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri159:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot39`).update({ state:5 });}
+    };
+    changeLogo160=()=>{
+        let user = firebase.auth().currentUser;let name = this.state.changeTask4;let date = this.state.nDate;
+        if(this.state.uri160!==require('./circle_bl.jpg')) {
+            this.setState({
+                uri160: require('./circle_bl.jpg')
+            });firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:4 });}
+        if(this.state.uri160===require('./circle_bl.jpg')) {
+            this.setState(
+                {
+                    uri160:require('./circle_wh.jpg')
+                }
+            );firebase.database().ref(`Users/${user.uid}/${date}/${name}/dot40`).update({ state:5 });}
+    };
     
     render() {
         return (
@@ -3131,17 +5602,31 @@ export default class taskPage extends React.Component {
                             </tr>
 
                             <tr>
-                                <td><input type="textField" id="textBox2" className="second" maxLength={10}  value={this.state.changeTask2} onChange={this.handleEditTask2}/><button onClick={this.addTask2}>+</button><button onClick={this.delTask2}>-</button></td>
-                                <td><img  id='id41' className="second" src={this.state.uri41} alt=''  height={20} onClick={this.changeLogo41}/><img  id='id42' className="second" src={this.state.uri42} alt=''  height={20} onClick={this.changeLogo42}/><img  id='id43' className="second" src={this.state.uri43} alt=''  height={20} onClick={this.changeLogo43}/><img  id='id44' className="second" src={this.state.uri44} alt=''  height={20} onClick={this.changeLogo44}/></td>
-                                <td ><img id='id45' className="second" src={this.state.uri45} alt=''  height={20} onClick={this.changeLogo45}/><img  id='id46' className="second" src={this.state.uri46} alt=''  height={20} onClick={this.changeLogo46}/><img  id='id47' className="second" src={this.state.uri47} alt=''  height={20} onClick={this.changeLogo47}/><img  id='id48' className="second" src={this.state.uri48} alt=''  height={20} onClick={this.changeLogo48}/></td>
-                                <td ><img id='id49' className="second" src={this.state.uri49} alt=''  height={20} onClick={this.changeLogo49}/><img  id='id50' className="second" src={this.state.uri50} alt=''  height={20} onClick={this.changeLogo50}/><img  id='id51' className="second" src={this.state.uri51} alt=''  height={20} onClick={this.changeLogo51}/><img  id='id52' className="second" src={this.state.uri52} alt=''  height={20} onClick={this.changeLogo52}/></td>
-                                <td ><img id='id53' className="second" src={this.state.uri53} alt=''  height={20} onClick={this.changeLogo53}/><img  id='id54' className="second" src={this.state.uri54} alt=''  height={20} onClick={this.changeLogo54}/><img  id='id55' className="second" src={this.state.uri55} alt=''  height={20} onClick={this.changeLogo55}/><img  id='id56' className="second" src={this.state.uri56} alt=''  height={20} onClick={this.changeLogo56}/></td>
-                                <td ><img id='id57' className="second" src={this.state.uri57} alt=''  height={20} onClick={this.changeLogo57}/><img  id='id58' className="second" src={this.state.uri58} alt=''  height={20} onClick={this.changeLogo58}/><img  id='id59' className="second" src={this.state.uri59} alt=''  height={20} onClick={this.changeLogo59}/><img  id='id60' className="second" src={this.state.uri60} alt=''  height={20} onClick={this.changeLogo60}/></td>
-                                <td ><img id='id61' className="second" src={this.state.uri61} alt=''  height={20} onClick={this.changeLogo61}/><img  id='id62' className="second" src={this.state.uri62} alt=''  height={20} onClick={this.changeLogo62}/><img  id='id63' className="second" src={this.state.uri63} alt=''  height={20} onClick={this.changeLogo63}/><img  id='id64' className="second" src={this.state.uri64} alt=''  height={20} onClick={this.changeLogo64}/></td>
-                                <td ><img id='id65' className="second" src={this.state.uri65} alt=''  height={20} onClick={this.changeLogo65}/><img  id='id66' className="second" src={this.state.uri66} alt=''  height={20} onClick={this.changeLogo66}/><img  id='id67' className="second" src={this.state.uri67} alt=''  height={20} onClick={this.changeLogo67}/><img  id='id68' className="second" src={this.state.uri68} alt=''  height={20} onClick={this.changeLogo68}/></td>
-                                <td ><img id='id69' className="second" src={this.state.uri69} alt=''  height={20} onClick={this.changeLogo69}/><img  id='id70' className="second" src={this.state.uri70} alt=''  height={20} onClick={this.changeLogo70}/><img  id='id71' className="second" src={this.state.uri71} alt=''  height={20} onClick={this.changeLogo71}/><img  id='id72' className="second" src={this.state.uri72} alt=''  height={20} onClick={this.changeLogo72}/></td>
-                                <td ><img id='id73' className="second" src={this.state.uri73} alt=''  height={20} onClick={this.changeLogo73}/><img  id='id74' className="second" src={this.state.uri74} alt=''  height={20} onClick={this.changeLogo74}/><img  id='id75' className="second" src={this.state.uri75} alt=''  height={20} onClick={this.changeLogo75}/><img  id='id76' className="second" src={this.state.uri76} alt=''  height={20} onClick={this.changeLogo76}/></td>
-                                <td ><img id='id77' className="second" src={this.state.uri77} alt=''  height={20} onClick={this.changeLogo77}/><img  id='id78' className="second" src={this.state.uri78} alt=''  height={20} onClick={this.changeLogo78}/><img  id='id79' className="second" src={this.state.uri79} alt=''  height={20} onClick={this.changeLogo79}/><img  id='id80' className="second" src={this.state.uri80} alt=''  height={20} onClick={this.changeLogo80}/></td>
+                                <td><input type="textField" id="textBox3" className="third" maxLength={10}  value={this.state.changeTask3} onChange={this.handleEditTask3}/><button onClick={this.addTask3}>+</button><button onClick={this.delTask3}>-</button></td>
+                                <td><img  id='id81' className="third" src={this.state.uri81} alt=''  height={20} onClick={this.changeLogo81}/><img  id='id82' className="third" src={this.state.uri82} alt=''  height={20} onClick={this.changeLogo82}/><img  id='id83' className="third" src={this.state.uri83} alt=''  height={20} onClick={this.changeLogo83}/><img  id='id84' className="third" src={this.state.uri84} alt=''  height={20} onClick={this.changeLogo84}/></td>
+                                <td ><img id='id85' className="third" src={this.state.uri85} alt=''  height={20} onClick={this.changeLogo85}/><img  id='id86' className="third" src={this.state.uri86} alt=''  height={20} onClick={this.changeLogo86}/><img  id='id87' className="third" src={this.state.uri87} alt=''  height={20} onClick={this.changeLogo87}/><img  id='id88' className="third" src={this.state.uri88} alt=''  height={20} onClick={this.changeLogo88}/></td>
+                                <td ><img id='id89' className="third" src={this.state.uri89} alt=''  height={20} onClick={this.changeLogo89}/><img  id='id90' className="third" src={this.state.uri90} alt=''  height={20} onClick={this.changeLogo90}/><img  id='id91' className="third" src={this.state.uri91} alt=''  height={20} onClick={this.changeLogo91}/><img  id='id92' className="third" src={this.state.uri92} alt=''  height={20} onClick={this.changeLogo92}/></td>
+                                <td ><img id='id93' className="third" src={this.state.uri93} alt=''  height={20} onClick={this.changeLogo93}/><img  id='id94' className="third" src={this.state.uri94} alt=''  height={20} onClick={this.changeLogo94}/><img  id='id95' className="third" src={this.state.uri95} alt=''  height={20} onClick={this.changeLogo95}/><img  id='id96' className="third" src={this.state.uri96} alt=''  height={20} onClick={this.changeLogo96}/></td>
+                                <td ><img id='id97' className="third" src={this.state.uri97} alt=''  height={20} onClick={this.changeLogo97}/><img  id='id98' className="third" src={this.state.uri98} alt=''  height={20} onClick={this.changeLogo98}/><img  id='id99' className="third" src={this.state.uri99} alt=''  height={20} onClick={this.changeLogo99}/><img  id='id100' className="third" src={this.state.uri100} alt='' height={20} onClick={this.changeLogo100}/></td>
+                                <td ><img id='id101' className="third" src={this.state.uri101} alt=''  height={20} onClick={this.changeLogo101}/><img  id='id102' className="third" src={this.state.uri102} alt=''  height={20} onClick={this.changeLogo102}/><img  id='id103' className="third" src={this.state.uri103} alt=''  height={20} onClick={this.changeLogo103}/><img  id='id104' className="third" src={this.state.uri104} alt=''  height={20} onClick={this.changeLogo104}/></td>
+                                <td ><img id='id105' className="third" src={this.state.uri105} alt=''  height={20} onClick={this.changeLogo105}/><img  id='id106' className="third" src={this.state.uri106} alt=''  height={20} onClick={this.changeLogo106}/><img  id='id107' className="third" src={this.state.uri107} alt=''  height={20} onClick={this.changeLogo107}/><img  id='id108' className="third" src={this.state.uri108} alt=''  height={20} onClick={this.changeLogo108}/></td>
+                                <td ><img id='id109' className="third" src={this.state.uri109} alt=''  height={20} onClick={this.changeLogo109}/><img  id='id110' className="third" src={this.state.uri110} alt=''  height={20} onClick={this.changeLogo110}/><img  id='id111' className="third" src={this.state.uri111} alt=''  height={20} onClick={this.changeLogo111}/><img  id='id112' className="third" src={this.state.uri112} alt=''  height={20} onClick={this.changeLogo112}/></td>
+                                <td ><img id='id113' className="third" src={this.state.uri113} alt=''  height={20} onClick={this.changeLogo113}/><img  id='id114' className="third" src={this.state.uri114} alt=''  height={20} onClick={this.changeLogo114}/><img  id='id115' className="third" src={this.state.uri115} alt=''  height={20} onClick={this.changeLogo115}/><img  id='id116' className="third" src={this.state.uri116} alt=''  height={20} onClick={this.changeLogo116}/></td>
+                                <td ><img id='id117' className="third" src={this.state.uri117} alt=''  height={20} onClick={this.changeLogo117}/><img  id='id118' className="third" src={this.state.uri118} alt=''  height={20} onClick={this.changeLogo118}/><img  id='id119' className="third" src={this.state.uri119} alt=''  height={20} onClick={this.changeLogo119}/><img  id='id120' className="third" src={this.state.uri120} alt=''  height={20} onClick={this.changeLogo120}/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="textField" id="textBox4" className="four" maxLength={10}  value={this.state.changeTask4} onChange={this.handleEditTask4}/><button onClick={this.addTask4}>+</button><button onClick={this.delTask4}>-</button></td>
+                                <td><img  id='id121' className="four" src={this.state.uri121} alt=''  height={20} onClick={this.changeLogo121}/><img  id='id122' className="four" src={this.state.uri122} alt=''  height={20} onClick={this.changeLogo122}/><img  id='id123' className="four" src={this.state.uri123} alt=''  height={20} onClick={this.changeLogo123}/><img  id='id124' className="four" src={this.state.uri124} alt=''  height={20} onClick={this.changeLogo124}/></td>
+                                <td ><img id='id125' className="four" src={this.state.uri125} alt=''  height={20} onClick={this.changeLogo125}/><img  id='id126' className="four" src={this.state.uri126} alt=''  height={20} onClick={this.changeLogo126}/><img  id='id127' className="four" src={this.state.uri127} alt=''  height={20} onClick={this.changeLogo127}/><img  id='id128' className="four" src={this.state.uri128} alt=''  height={20} onClick={this.changeLogo128}/></td>
+                                <td ><img id='id129' className="four" src={this.state.uri129} alt=''  height={20} onClick={this.changeLogo129}/><img  id='id130' className="four" src={this.state.uri130} alt=''  height={20} onClick={this.changeLogo130}/><img  id='id131' className="four" src={this.state.uri131} alt=''  height={20} onClick={this.changeLogo131}/><img  id='id132' className="four" src={this.state.uri132} alt=''  height={20} onClick={this.changeLogo132}/></td>
+                                <td ><img id='id133' className="four" src={this.state.uri133} alt=''  height={20} onClick={this.changeLogo133}/><img  id='id134' className="four" src={this.state.uri134} alt=''  height={20} onClick={this.changeLogo134}/><img  id='id135' className="four" src={this.state.uri135} alt=''  height={20} onClick={this.changeLogo135}/><img  id='id136' className="four" src={this.state.uri136} alt=''  height={20} onClick={this.changeLogo136}/></td>
+                                <td ><img id='id137' className="four" src={this.state.uri137} alt=''  height={20} onClick={this.changeLogo137}/><img  id='id138' className="four" src={this.state.uri138} alt=''  height={20} onClick={this.changeLogo138}/><img  id='id139' className="four" src={this.state.uri139} alt=''  height={20} onClick={this.changeLogo139}/><img  id='id140' className="four" src={this.state.uri140} alt=''  height={20} onClick={this.changeLogo140}/></td>
+                                <td ><img id='id141' className="four" src={this.state.uri141} alt=''  height={20} onClick={this.changeLogo141}/><img  id='id142' className="four" src={this.state.uri142} alt=''  height={20} onClick={this.changeLogo142}/><img  id='id143' className="four" src={this.state.uri143} alt=''  height={20} onClick={this.changeLogo143}/><img  id='id144' className="four" src={this.state.uri144} alt=''  height={20} onClick={this.changeLogo144}/></td>
+                                <td ><img id='id145' className="four" src={this.state.uri145} alt=''  height={20} onClick={this.changeLogo145}/><img  id='id146' className="four" src={this.state.uri146} alt=''  height={20} onClick={this.changeLogo146}/><img  id='id147' className="four" src={this.state.uri147} alt=''  height={20} onClick={this.changeLogo147}/><img  id='id148' className="four" src={this.state.uri148} alt=''  height={20} onClick={this.changeLogo148}/></td>
+                                <td ><img id='id149' className="four" src={this.state.uri149} alt=''  height={20} onClick={this.changeLogo149}/><img  id='id150' className="four" src={this.state.uri150} alt=''  height={20} onClick={this.changeLogo150}/><img  id='id151' className="four" src={this.state.uri151} alt=''  height={20} onClick={this.changeLogo151}/><img  id='id152' className="four" src={this.state.uri152} alt=''  height={20} onClick={this.changeLogo152}/></td>
+                                <td ><img id='id153' className="four" src={this.state.uri153} alt=''  height={20} onClick={this.changeLogo153}/><img  id='id154' className="four" src={this.state.uri154} alt=''  height={20} onClick={this.changeLogo154}/><img  id='id155' className="four" src={this.state.uri155} alt=''  height={20} onClick={this.changeLogo155}/><img  id='id156' className="four" src={this.state.uri156} alt=''  height={20} onClick={this.changeLogo156}/></td>
+                                <td ><img id='id157' className="four" src={this.state.uri157} alt=''  height={20} onClick={this.changeLogo157}/><img  id='id158' className="four" src={this.state.uri158} alt=''  height={20} onClick={this.changeLogo158}/><img  id='id159' className="four" src={this.state.uri159} alt=''  height={20} onClick={this.changeLogo159}/><img  id='id160' className="four" src={this.state.uri160} alt=''  height={20} onClick={this.changeLogo160}/></td>
                             </tr>
                         </table>
                     </view>
