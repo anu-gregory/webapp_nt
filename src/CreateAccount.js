@@ -40,15 +40,16 @@ export default class createAccount extends React.Component{
 
     render(){
         return(
-            <div className='login_body'>
-                <form className='form_login' onSubmit={event => { this.submitLogin(event);}}>
-                    <label>Email<br/><input type='text' className='form_email' placeholder='insert email' onChange={this.email} value={this.state.email}/> </label><br/>
-                    <br/><label>Password<br/><input type='password' id='pass1' className='form_password' placeholder='insert password' onChange={this.password} value={this.state.password}/> </label><br/>
-                    <br/><label>ReType Password<br/><input type='password' id='pass2' className='form_password' placeholder='retype password' onChange={this.rePassword} value={this.state.rePassword}/> </label>
-                    <br/><br/><input type='submit' value='Create Account'/>
-                    <br/><p>old user?<a href={'/login'}>log in</a></p>
+            <div className='login_page'>
+                <div className="login-page">
+                <form className="form" onSubmit={event => { this.submitLogin(event);}}>
+                    <input type="text" placeholder="email address" onChange={this.email} value={this.state.email}/>
+                    <input type="password" placeholder="password" onChange={this.password} value={this.state.password}/>
+                    <input type="password" placeholder="re-password" onChange={this.rePassword} value={this.state.rePassword}/>
+                    <button>create</button>
+                    <p className="message">Already registered? <a href={'/login'}>Sign In</a></p>
                 </form>
-                <label onChange={this.state.error}>{this.state.error}</label>
+                </div>
             </div>
         );
     }
