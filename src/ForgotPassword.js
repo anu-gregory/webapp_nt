@@ -26,12 +26,15 @@ export default class ForgotPassword extends React.Component{
     render(){
         return(
             <div className='login_body'>
-                <form className='form_login' onSubmit={event => { this.submitLogin(event);}}>
-                    <label>Email<br/><input type='text' className='form_email' placeholder='insert email' onChange={this.email} value={this.state.email}/> </label><br/>
-                    <br/><br/><input type='submit' value='resetPass'/>
-                    <br/><p>New user?<a href={'/CreateAccount'}>Create Account</a></p>
-                </form>
-                <label onChange={this.state.error}>{this.state.error}</label>
+                <div className="login-page">
+                    <div className="form">
+                        <form className="login-form" onSubmit={event => { this.submitLogin(event);}}>
+                            <input type="text" placeholder="email" onChange={this.email} value={this.state.email}/>
+                            <button>Submit</button>
+                            <p className="message">Not registered? <a href={'/CreateAccount'}>Create an account</a></p>
+                        </form>
+                    </div>
+                </div>
             </div>
         );
     }
