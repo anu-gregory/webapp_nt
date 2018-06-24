@@ -39,6 +39,7 @@ export default class login extends React.Component{
                             <input type="password" placeholder="password" onChange={this.password} value={this.state.password}/>
                             <button>login</button>
                             <p className="message">Not registered? <a href={'/CreateAccount'}>Create an account</a></p>
+                            <p className="message">Forgot Password? <a href={'/ForgotPassword'}>Reset Password</a></p>
                         </form>
                     </div>
                 </div>
